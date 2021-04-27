@@ -142,8 +142,8 @@ body{
 }
 
 #nav li a, .nav2 li a {
-    font-family: 'Georgia';
-    font-size: 16px;
+    font-family: 'Libre Baskerville';
+    font-size: 15px;
     text-transform: uppercase;
     color: #fff;
     text-transform: uppercase;
@@ -211,14 +211,55 @@ header.header {
     transition: all 0.4s ease-in-out;
 }
 
+.header-info {
+    font-size: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header.show-fixed {
-    background: rgba(0, 0, 0, 1);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+34,c6c6c6+50,000000+67,000000+67,000000+70 */
+    /* background: rgb(0,0,0); */ /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 34%, rgba(198,198,198,.5) 50%, rgba(0,0,0,1) 67%, rgba(0,0,0,1) 67%, rgba(0,0,0,1) 70%); /* FF3.6-15 */
+    /* background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 34%,rgba(198,198,198,.5) 50%,rgba(0,0,0,1) 67%,rgba(0,0,0,1) 67%,rgba(0,0,0,1) 70%); */ /* Chrome10-25,Safari5.1-6 */
+    /* background: linear-gradient(to right,  rgba(0,0,0,1) 34%,rgba(198,198,198,.5) 50%,rgba(0,0,0,1) 67%,rgba(0,0,0,1) 67%,rgba(0,0,0,1) 70%); */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
     padding: 0;
-    top: 20px;
+    z-index: 1010;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background: #000;
+}
+
+header.header.show-fixed::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: -1;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(left, rgba(0,0,0,1) 34%, rgba(198,198,198,.5) 50%, rgba(0,0,0,1) 67%, rgba(0,0,0,1) 67%, rgba(0,0,0,1) 70%);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 34%,rgba(198,198,198,.5) 50%,rgba(0,0,0,1) 67%,rgba(0,0,0,1) 67%,rgba(0,0,0,1) 70%);
+    background: linear-gradient(to right, rgba(0,0,0,1) 34%,rgba(198,198,198,.5) 50%,rgba(0,0,0,1) 67%,rgba(0,0,0,1) 67%,rgba(0,0,0,1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
 }
 
 .header.show-fixed .nav2>li>a {
-    color: #656565;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+}
+
+.header-inner {
+    max-width: 1390px;
+    margin: 0 auto;
 }
 
 .header-inner .logo-holder img.fixed {
@@ -227,16 +268,12 @@ header.header {
 
 .header.show-fixed .header-inner .logo-holder img.fixed {
     display: block;
-    margin: -15px auto -12px;
 }
 
 .header.show-fixed .header-inner .logo-holder img.main {
     display: none;
 }
 
-.header.show-fixed .aios-split-nav {
-    padding: 0 20px;
-}
 
 .header-inner>.row {
     display: flex;
@@ -249,12 +286,13 @@ header.header {
 
 .header-inner .logo-holder img {
     margin: 0 auto;
+    padding-top: 12px;
 }
 
 .aios-split-nav {
     display: flex;
     justify-content: space-between;
-    padding: 94px 20px 0;
+    padding-top: 38px
 }
 
 
@@ -284,6 +322,7 @@ footer.footer {
     letter-spacing: 0.05em;
     line-height: 80px;
     color: #000000;
+    padding-top: 118px;
 }
 
 .site-title-primary h4 {
@@ -298,7 +337,7 @@ footer.footer {
     width: 100%;
     border-top: #a11e21 solid 3px;
     padding-bottom: 54px;
-    position: relative;
+    position: absolute;
 }
 .title-line-primary::after {
     content: " ";
@@ -313,6 +352,8 @@ footer.footer {
 .title-line-secondary {
     border-left: solid 3px #a11e21;
     position: relative;
+    padding-left: 52px;
+    margin-left: 190px;
 
 }
 .title-line-secondary::after {
@@ -442,18 +483,20 @@ footer.footer {
         position: relative;
     }
     .title-slide-show {
+        position: absolute;
         font-size: 135px;
         font-family: 'Bebas Neue', serif;
         letter-spacing: 0.05em;
-        position: absolute;
-        bottom: 106px;
+        color: #ffffff;
+        border-left: solid 4px #ffffff;
+        min-height: 656px;
         max-width: 322px;
+        bottom: 0;
         left: 14%;
+        padding-left: 22px;
     }
 
     .title-slide-show {
-        color: #ffffff;
-        border-left: solid 4px #ffffff;
         
     }
 
@@ -687,7 +730,8 @@ footer.footer {
         background-size: cover;
         background-position: center;
         width: 100%;
-        padding: 116px 0;
+        padding-bottom: 122px;
+        border-bottom: solid 14px #a11e21;
     }
 
     .hp-commercial .site-title-primary h2 {
@@ -705,6 +749,7 @@ footer.footer {
     .region-commercial-container {
         display: grid;
         grid-template-columns: repeat(100,1fr);
+        padding-top: 86px;
     }
 
     .commercial-primary-section {
@@ -751,10 +796,8 @@ footer.footer {
     .hp-contact-us::after {
         content: "";
         background: url(images/contact-bg.jpg) no-repeat;
-        background-position: center;
         background-size: cover;
-        opacity: .50;
-        filter: grayscale(1);
+        opacity: .9;
         position: absolute;
         width: 100%;
         top: 0;
@@ -901,9 +944,10 @@ footer.footer {
         justify-content: center;
         border-radius: 50%;
         margin: 0 0 18px;
-        background: #225769;
+        background: #a11e21;
         font-size: 23px;
-        color: #fff;
+        color: #ffffff;
+        opacity: .6;
         -webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
@@ -913,12 +957,12 @@ footer.footer {
         position: relative;
     }
     .instgram-smi::after {
-        position: absolute;
-        height: 57px;
-        width: 3px;
         content: "";
+        position: absolute;
+        height: 38px;
+        width: 3px;
         top: 41px;
         z-index: 3242342423;
-        background: red;
+        background: #ffffff;
     }
     /* SMI end */
