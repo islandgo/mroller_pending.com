@@ -33,8 +33,49 @@
 			var $nav = jQuery( '#nav' );
 			if ( $nav.length > 0 ) $nav.navTabDoubleTap();
 		},
-		initFeaturedProperties: function() {
+		initTeams: function() {
 			/* Put featured properties code here */
+			var map = jQuery(".comp-hp-team-container");
+			var mapOrigWidth = 1600;
+			var mapOrigHeight = 855;
+			var container = jQuery(".hp-team");
+			var containerWidth = container.width();
+			var scale = containerWidth / mapOrigWidth;
+			scale = scale > 1 ? scale : scale;
+			map.css({
+					transform: 'scale(' + scale + ')',
+					transformOrigin: '0 0'
+			});
+			container.css({
+					height: (mapOrigHeight * scale)
+			});
+		
+			console.log('reszed');
+		},
+		fcMapHover: function() {
+			jQuery('.comp-hp-team-container area').hover(
+					function() {
+							var currentID = jQuery(this).attr('data-area-id');
+							console.log("currentID");
+							console.log(currentID);
+							var target = jQuery('.comp-hp-team-container div[data-area-id="'+ currentID +'"]');
+		
+							target.addClass('active');
+							console.log(target);
+							console.log(currentID);
+					},
+					function() {
+						jQuery('.comp-hp-team-container div').removeClass('active');
+					}
+			);
+			jQuery('.team-img .map-details > div').hover(function () {
+				var currentID2 = jQuery(this).attr('data-area-id');
+				var target2 = jQuery('.map-hover-item[data-area-id="' + currentID2 + '"]');
+				target2.addClass('active');
+				jQuery(this).addClass('active');
+			}, function () {
+				jQuery(this).removeClass('active');
+			});
 		},
 		initFeaturedCommunities: function() {
 			/* Put featured communities code here */
@@ -54,6 +95,8 @@
 	
 	jQuery(document).ready( function() {
 
+		app.fcMapHover();
+
 		app.aosInit();
 
 		/* Initialize quick search */
@@ -62,8 +105,7 @@
 		/* Initialize navigation */
 		app.initNavigation();
 		
-		/* Initialize featured properties */
-		app.initFeaturedProperties();
+		
 
 		/* Initialize featured communities */
 		app.initFeaturedCommunities();
@@ -73,6 +115,9 @@
 		
 		/* Initialize quick search */
 		app.initQuickSearch();
+
+		app.initTeams();
+
 
 	
 		
@@ -94,6 +139,12 @@
 	jQuery(window).on('scroll', function(){
 		app.initDetectScroll();
 
+	})
+
+	
+	jQuery(window).on('resize', function(){
+		/* Initialize featured properties */
+		app.initTeams();
 	})
 
 
