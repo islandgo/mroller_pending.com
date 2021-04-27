@@ -823,3 +823,44 @@ footer.footer {
     }
 
 	/* Footer end */
+
+    /* SMI start */
+    .fixed-smi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top: 300px;
+        right: 30px;
+        z-index: 10;
+    }
+    .fixed-smi a {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 0 18px;
+        background: #225769;
+        font-size: 23px;
+        color: #fff;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+    .instgram-smi {
+        position: relative;
+    }
+    .instgram-smi::after {
+        position: absolute;
+        height: 57px;
+        width: 3px;
+        content: "";
+        top: 41px;
+        z-index: 3242342423;
+        background: red;
+    }
+    /* SMI end */

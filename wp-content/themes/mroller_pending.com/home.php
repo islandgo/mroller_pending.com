@@ -171,7 +171,6 @@
 <!-- Contact Us end -->
 
 <!-- Hp Popup -->
-
 <div class="intro-popup">
 	<a href="#introPopupHolder" class="aios-content-popup introPopupTrigger">Intro Popup Form</a>
 	<div class="aiosp-hide" id="introPopupHolder">
@@ -189,6 +188,23 @@
 	
 </div>
 <!-- popup form html -->
+
+
+<!-- SMI start -->
+<div class="fixed-smi">
+    <a href="[ai_client_facebook]" aria-label="facebook" target="_blank" rel="noopener">
+        <span class="ai-font-facebook"></span>
+    </a>
+    <a href="[ai_client_youtube]" aria-label="youtube" target="_blank" rel="noopener">
+        <span class="ai-font-youtube"></span>
+    </a>
+    <a href="[ai_client_instagram]" class="instgram-smi" aria-label="instagram" target="_blank" rel="noopener">
+        <span class="ai-font-instagram"></span>
+    </a>
+</div>
+<!-- SMI end -->
+
+
 
 <!-- your home html -->
 
