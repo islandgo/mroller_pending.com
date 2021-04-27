@@ -6,6 +6,11 @@
 <section class="hp-slideshow">
 	<h2 class="hidden">hidden h2</h2>
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Hp Slideshow") ) : ?><?php endif ?>
+	<h1 class="title-slide-show">
+		<span class="title-slide-primary"> NO ONE DOES</span>
+		<span class="title-slide-secondary">MORE</span>
+	</h1>
+
 </section>
 <!-- Banner End -->
 

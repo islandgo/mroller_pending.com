@@ -20,15 +20,16 @@
 
 
 	<header class="header">
-		<div class="container-fluid">		
-			<div class="header-logo">
-			<img alt="header" class="header-item item-header-logo"
-				src="<?php echo get_stylesheet_directory_uri() ?>/images/header-logo.png">
+		<div class="container">
+			<div class="header-inner">
+				<div class="logo-holder">
+				<a aria-label="logo" href="[blogurl]">
+    				<img alt="logo" class="img-responsive main" src="<?php echo get_stylesheet_directory_uri() ?>/images/header-logo.png">
+   					<img alt="logo" class="img-responsive fixed" src="<?php echo get_stylesheet_directory_uri() ?>/images/header-logo.png">
+				</a>
+				</div>
+				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_id' => 'nav2', 'theme_location' => 'primary-menu','container_class' => 'row' ) ); ?>
 			</div>
-
-			<nav class="navigation">
-				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_id' => 'nav', 'theme_location' => 'primary-menu' ) ); ?>
-			</nav>
 		</div>
 	</header>
 

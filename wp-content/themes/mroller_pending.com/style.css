@@ -110,14 +110,151 @@ body{
     -moz-osx-font-smoothing: grayscale; */
 }
 
+/* Sub Menu */
+
+#nav li, .nav2 li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+#nav>li::after, .nav2>li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #0abab5;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#nav>li:hover::after, .nav2>li:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+
+#nav li a, .nav2 li a {
+    font-family: 'Georgia';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#nav .sub-menu, .nav2 .sub-menu {
+    list-style: none outside none;
+    margin: 0;
+    display: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    min-width: 198px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 15px;
+}
+
+#nav .sub-menu a, .nav2 .sub-menu a {
+    color: #FFFFFF;
+    display: block;
+    padding: 15px 10px;
+    background: #cdbe9d;
+    text-align: center;
+}
+
+#nav .sub-menu a:hover, .nav2 .sub-menu a:hover {
+    background: #b2b2b2;
+    text-decoration: none;
+}
+
+#nav .sub-menu .sub-menu, .nav2 .sub-menu .sub-menu {
+    top: -16px;
+    left: initial;
+    margin-left: 100%;
+    transform: translateX(0);
+}
+
+#nav li:hover>.sub-menu, .nav2 li:hover>.sub-menu {
+    display: block !important;
+}
+
+#nav .sub-menu li, .nav2 .sub-menu li {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
 header.header {
     font-size: 0;
-    position: absolute;
+    position: fixed;
+    padding: 18px 0;
+    opacity: 0;
+    z-index: 1010;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1010;
-    padding: 35px 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.header.show-fixed {
+    background: rgba(255, 255, 255, .90);
+    padding: 0;
+    top: 20px;
+}
+
+.header.show-fixed .nav2>li>a {
+    color: #656565;
+}
+
+.header-inner .logo-holder img.fixed {
+    display: none;
+}
+
+.header.show-fixed .header-inner .logo-holder img.fixed {
+    display: block;
+    margin: -15px auto -12px;
+}
+
+.header.show-fixed .header-inner .logo-holder img.main {
+    display: none;
+}
+
+.header.show-fixed .aios-split-nav {
+    padding: 0 20px;
+}
+
+.header-inner>.row {
+    display: flex;
+    align-items: center;
+}
+
+.header-inner>.row::before {
+    display: none;
+}
+
+.header-inner .logo-holder img {
+    margin: 0 auto;
+}
+
+.aios-split-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 94px 20px 0;
 }
 
 
@@ -301,6 +438,32 @@ footer.footer {
     /* Banner */
     .hp-slideshow {
         position: relative;
+    }
+    .title-slide-show {
+        font-size: 90px;
+        font-family: 'Bebas Neue', serif;
+        letter-spacing: 0.05em;
+        position: absolute;
+        bottom: 0;
+        max-width: 193px;
+        background: red;
+        left: 14%;
+    }
+    .title-slide-show .title-slide-secondary {
+        position: relative;
+        line-height: 58px;
+        background: beige;
+        display: block;
+        padding-top: 27px;
+    }
+    .title-slide-show .title-slide-secondary::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: 0;
+        right: 0;
+        background: blue;
     }
     /* Banner End */
 
@@ -547,7 +710,6 @@ footer.footer {
         line-height: 18px;
         letter-spacing: 0.08em;
         padding-bottom: 60px;
-        margin-left: 104px;
     }
 
     .footer-info .footer-address {
