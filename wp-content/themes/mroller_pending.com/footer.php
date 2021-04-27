@@ -7,9 +7,9 @@
 <footer class="footer">
 	<div class="comp-footer-container container">
 		<div class="footer-item footer-logo">
-			<img alt="footer" class="img-footer-logo"
+			<img alt="footer" class="img-logo"
 				src="<?php echo get_stylesheet_directory_uri() ?>/images/footer-logo-1.png">
-			<img alt="footer" class="img-footer-logo"
+			<img alt="footer" class="img-award"
 				src="<?php echo get_stylesheet_directory_uri() ?>/images/footer-award.png">
 		</div>
 
@@ -34,8 +34,8 @@
 		<div class="footer-item lower-footer">
 			<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_class' => 'footernav', 'theme_location' => 'footer-menu','depth'=>1 ) ); ?>
 
-			<p class="copyright">Copyright ©
-				<?php echo do_shortcode('[currentYear]')?> <span class="sitename"> Patrice Sandstrom. </span>All rights
+			<p class="copyright"> ©
+				<?php echo do_shortcode('[currentYear]')?> <span class="sitename"> Michael Roller. </span> All rights
 				reserved. <a class="sitemap" href="<?php echo do_shortcode('[blogurl]')?>/sitemap">Sitemap |</a>
 				<?php echo do_shortcode('[agentimage_credits credits="Real Estate Website Design by <a target="_blank" href="https://www.agentimage.com" style="text-decoration:underline;font-weight:bold">Agent Image</a>"]'); ?>
 			</p>
@@ -48,7 +48,7 @@
 	</div>
 </footer>
 
-<?php do_action('aios_neighborhoods_footer')?>
+<?php do_action('aios_neighborhoods_footer')?>\
 <?php do_action('aios_landing_page_footer')?>
 
 </div><!-- end of #main-wrapper -->
