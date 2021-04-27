@@ -272,7 +272,9 @@ footer.footer {
     background-color: #000000;
     color: #ffffff;
 }
-
+.intro-popup {
+    display: none;
+}
 /* Site title primary */
 
 
@@ -684,7 +686,57 @@ footer.footer {
 
 
 	/* Contact Us */
+    .hp-contact-us {
+        position: relative;
+        padding: 50px 0;
+    }
+    .hp-contact-us::after {
+        content: "";
+        background: url(images/contact-bg.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: .50;
+        filter: grayscale(1);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    .region-contact-container {
+        max-width: 840px;
+        margin: 0 auto;
+        border-left: 3px solid red;
+        border-right: 3px solid red;
+        border-bottom: 3px solid red;
+        width: 100%;
+        padding: 95px 54px 0;
+        position: relative;
+    }
+    .region-contact-container::after,
+    .region-contact-container::before {
+        content: '';
+        position: absolute;
+        width: 36%;
+        height: 3px;
+        background: red;
+        top: 0;
+        pointer-events: none;
+        right: 0;
+    }
 
+    .region-contact-container::before {
+        right: 0;
+    }
+    .region-contact-container::after {
+        left: 0;
+    }
+    .region-contact-container .title-primary {
+        position: relative;
+        text-align: center;
+        margin-top: -103px;
+        font-size: 24px;
+    }
 	/* Contact Us end */
 
 

@@ -130,9 +130,9 @@
 <!-- Contact Us -->
 <section class="hp-contact-us">
 	<div class="region-contact-container container">
+		<h2 class="title-primary">Have Questions?</h2>
 		<div class="site-title-primary">
 			<div class="section-name">
-				<span>Have Questions?</span>
 				<h2>Contact Us</h2>
 			</div>
 		</div>
@@ -172,20 +172,20 @@
 <!-- Hp Popup -->
 
 <div class="intro-popup">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Hp Popup") ) : ?><?php endif ?>
-</div>
-<a href="#introPopupHolder" class="aios-content-popup introPopupTrigger">Intro Popup Form</a>
-<div class="aiosp-hide" id="introPopupHolder">
-    <div class="introPopupHolder-content">
-        <div class="intro-popup-title">
-            <h2 class="primary-text">Join our</h2>
-            <h3 class="secondary-text">Network</h3>
-            <p>Keep up to date with the latest market trends and opportunities</p>
-        </div>
-        <div class="intro-popup-form">
-			<?php echo do_shortcode('[contact-form-7 html_class="use-floating-validation-tip" id="34" title="Contact Popup Form"]')?>
-        </div>
-    </div>
+	<a href="#introPopupHolder" class="aios-content-popup introPopupTrigger">Intro Popup Form</a>
+	<div class="aiosp-hide" id="introPopupHolder">
+		<div class="introPopupHolder-content">
+			<div class="intro-popup-title">
+				<h2 class="primary-text">Join our</h2>
+				<h3 class="secondary-text">Network</h3>
+				<p>Keep up to date with the latest market trends and opportunities</p>
+			</div>
+			<div class="intro-popup-form">
+				<?php echo do_shortcode('[contact-form-7 html_class="use-floating-validation-tip" id="34" title="Contact Popup Form"]')?>
+			</div>
+		</div>
+	</div>
+	
 </div>
 <!-- popup form html -->
 
