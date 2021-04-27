@@ -119,8 +119,7 @@
 <section class="hp-commercial">
 	<div class="site-title-primary title-line-secondary">
 		<h2>More than just residential</h2>
-		<h4>Commercial experts too</h4>
-		<div class="title-line-primary"></div>			
+		<h4>Commercial experts too</h4>			
 	</div>
 	<div class="region-commercial-container">
 		<div class="commercial-primary-section">
