@@ -20,9 +20,10 @@
 
 
 	<header class="header">
-		<div class="container">
-			<div class="logo">
-				<a href="<?php echo esc_url( home_url() ) ?>" class="site-name"><?php bloginfo('name'); ?></a>
+		<div class="container-fluid">		
+			<div class="header-logo">
+			<img alt="header" class="header-item item-header-logo"
+				src="<?php echo get_stylesheet_directory_uri() ?>/images/header-logo.png">
 			</div>
 
 			<nav class="navigation">

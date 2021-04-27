@@ -29,8 +29,8 @@ TABLE OF CONTENTS
 
 :root {
     /** Font default */
-    --font-family-default: 'Open Sans', sans-serif;
-    --font-family-title: 'Noto Serif', serif;
+    --font-family-default: 'Libre Baskerville', sans-serif;
+    --font-family-title: 'Bebas Neue', serif;
     --font-size-default: 14px;
     --font-size-title: 18px;
     --font-color-default: #000000;
@@ -105,11 +105,63 @@ body{
 	background: #FFFFFF;
 	color: var(--font-color-default);
 	margin: 0;
-    overflow: hidden;
     /* Remove the comment from line 85 to 86 if the font issue in safari occurs */
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
 }
+
+header.header {
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1010;
+    padding: 35px 0;
+}
+
+
+#main-wrapper {
+    overflow: hidden;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    line-height: 36px;
+}
+
+footer.footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Site title primary */
+
+
+.site-title-primary h2 {
+    font-size: 90px; 
+    font-family: 'Bebas Neue', serif;
+    letter-spacing: 0.05em;
+    line-height: 80px;
+    color: #000000;
+}
+
+.site-title-primary h4 {
+    font-style: italic;
+    font-size: 24px;
+    color: #747474;
+    text-transform: uppercase;
+    line-height: 42px;  
+}
+
+.site-title-primary .title-line {
+    width: 100%;
+    border-top: #a11e21 solid 3px;
+    padding-bottom: 54px;
+}
+
+/* s */
 
 /*******************************************************
  *
@@ -209,3 +261,235 @@ body{
 
 /* MEDIA QUERIES ARE AUTOMATICALLY REMOVED FROM THIS FILE, they must be placed in style-media-queries.css */
 
+
+    /* Header */
+    .menu-main-menu-container {
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+	/* Header end */
+
+    /* Banner */
+    .hp-slideshow {
+        position: relative;
+    }
+    /* Banner End */
+
+
+	/* About Us */
+    .properties-primary-section {
+        position: relative;
+    }
+
+    .properties-primary-section .comp-properties-container::after {
+        content: ' ';
+        width: 100%;
+        background: #a11e21;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 32px;
+        height: 85%;
+        transform: translateY(-50%);
+    }
+
+    .comp-properties-container {
+        position: relative;
+    }
+
+    .comp-properties-container .properties-item::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.70);
+        z-index: 1;
+    }
+
+    .region-properties-container {
+        display: grid;
+        grid-template-columns: repeat(100,1fr);
+    }
+
+    .properties-primary-section {
+        grid-column: 1 / 47;
+
+    }
+
+    .properties-secondary-section {
+        grid-column: 57 / -1;
+    }
+
+    
+    .comp-properties-container a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+    
+    .comp-properties-container img {
+        width: 100%;
+        max-height: 258px;
+    }
+    
+    .comp-properties-container h3 {
+        position: absolute;
+        font-size: 48px;
+        font-style: italic;
+        letter-spacing: 0.05em;
+        z-index: 1;
+        color: #ffffff;
+    }
+    
+    .properties-primary-section h2 {
+        padding: 90px 0 0 78px;
+    }
+
+    .properties-secondary-section h2 {
+        padding: 448px 400px 42px 0;
+    }
+
+    .properties-primary-section h4 {
+        padding: 10px 0 10px 78px;
+    }
+
+    .properties-secondary-section h4 {
+        padding: 0px 378px 84px 0;
+    }
+
+
+
+	/* About Us end */
+
+
+	/* Area */
+
+    .hp-area {
+        background: linear-gradient(to left, rgba(0,0,0,.80) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0) 100%);
+
+    }
+
+    .region-area-container .site-title-primary h2 {
+        font-size: 72px;
+        line-height: 80px;
+        letter-spacing: 0.05em;
+        padding: 116px 0 0 50px;
+    }
+
+    .region-area-container .site-title-primary h4 {
+        font-size: 36px;
+        padding-left: 50px;
+    }
+
+    .comp-area-container {
+        display: flex;
+    }
+
+    .comp-area-container img {
+        padding: 112px 140px 76px 30px;
+    }
+
+    .comp-area-container p {
+        padding-top: 132px;
+    }
+
+    .region-area-container .site-title-primary .title-line {
+        border-top: none;
+    }
+
+
+	/* Area end*/
+
+
+	/* Team */
+
+	/* Team end */
+
+
+	/* Residential */
+
+    .hp-commercial {
+        background: url(images/commercial-bg.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding: 116px 0;
+    }
+
+    .hp-commercial .site-title-primary h2 {
+        color: #ffffff;
+    }
+
+    .hp-commercial .site-title-primary h4 {
+        font-size: 36px;
+    }
+
+    .hp-commercial .site-title-primary .title-line {
+        border-top: none;
+    }
+
+    .region-commercial-container {
+        display: grid;
+        grid-template-columns: repeat(100,1fr);
+    }
+
+    .commercial-primary-section {
+        grid-column: 20 / 58;
+    }
+
+    .commercial-secondary-section {
+        grid-column: 63 / -1;
+        position: relative;
+        z-index: 1;
+    }
+
+    .commercial-primary-section p {
+        color: #ffffff;
+        padding-bottom: 56px;
+    }
+
+    .commercial-secondary-section img {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .region-commercial-container .commercial-secondary-section::after {
+        content: ' ';
+        width: 85%;
+        background: #a11e21;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        height: 104%;
+        transform: translateY(-52%);
+    }
+
+	/* Residential end */
+
+
+	/* Contact Us */
+
+	/* Contact Us end */
+
+
+	/* Footer */
+
+    .comp-footer-container .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-info {
+        display: flex;
+    }
+
+	/* Footer end */
