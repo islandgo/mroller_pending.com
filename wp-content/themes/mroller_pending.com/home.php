@@ -136,35 +136,36 @@
 				<h2>Contact Us</h2>
 			</div>
 		</div>
-
-		<div class="form-md pad-top">
-			<label for="git-name"></label>
-			<input type="text" id="git-name" placeholder="Name">
-		</div>
-		
-		<div class="form-md pad-left">
-			<label for="git-email"></label>
-			<input type="text" id="git-email" placeholder="Email">
-		</div>
-		
-		<div class="form-md pad-right">
-			<label for="git-phone"></label>
-			<input type="text" id="git-phone" placeholder="Phone">
-		</div>
-
-		<div class="form-md pad-bot">
-			<label for="git-current"></label>
-			<input type="text" id="git-current" placeholder="Current Address (Optional)">
-		</div>
-		
-		<div class="form-lg">
-			<label for="git-message"></label>
-			<textarea id="git-message" placeholder="Message"></textarea>
-			<div class="form-btn">
-				<input type="submit" value="talk to you soon!" class="primary-btn">
+		<div class="site-form">
+			<div class="form-md pad-top">
+				<label for="git-name"></label>
+				<input type="text" id="git-name" placeholder="Name">
 			</div>
+			
+			<div class="form-md pad-left">
+				<label for="git-email"></label>
+				<input type="text" id="git-email" placeholder="Email">
+			</div>
+			
+			<div class="form-md pad-right">
+				<label for="git-phone"></label>
+				<input type="text" id="git-phone" placeholder="Phone">
+			</div>
+	
+			<div class="form-md pad-bot">
+				<label for="git-current"></label>
+				<input type="text" id="git-current" placeholder="Current Address (Optional)">
+			</div>
+			
+			<div class="form-lg">
+				<label for="git-message"></label>
+				<textarea id="git-message" placeholder="Message"></textarea>
+				<div class="form-btn">
+					<input type="submit" value="talk to you soon!" class="primary-btn">
+				</div>
+			</div>
+			<a href="[blogurl]" class="search-btn-primary" aria-label="contact-us-btn">Read our market insight reports</a>
 		</div>
-		<a href="[blogurl]" class="search-btn-primary" aria-label="contact-us-btn">Read our market insight reports</a>
 	</div>	
 </section>
 <!-- Contact Us end -->
