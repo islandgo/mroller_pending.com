@@ -16,7 +16,7 @@
 			<div class="site-title-primary">
 				<h2>This is what we do</h2>
 				<h4>Our recent listed & sold properties</h4>
-				<div class="title-line"></div>
+				<div class="title-line-primary"></div>
 			</div>
 			<div class="comp-properties-container">
 				<a href="properties" class="properties-item">
@@ -45,7 +45,7 @@
 		<div class="properties-secondary-section">
 			<div class="site-title-primary">
 				<h2>This is how well we do it</h2>
-				<div class="title-line"></div>
+				<div class="title-line-primary"></div>
 				<h4>What over 200 clients are saying about us</h4>			
 			</div>
 			<a href="[blogurl]" class="search-btn-primary" aria-label="properties-btn">Read All About Us</a>
@@ -57,16 +57,17 @@
 <!-- Area -->
 <section class="hp-area">
 	<div class="region-area-container">
-		<div class="site-title-primary">
+		<div class="site-title-primary title-line-secondary">
 			<h2>Serving the are for over 30 years</h2>
 			<h4>Approaching $1 Billion in sales</h4>
-			<div class="title-line"></div>
 		</div>
 		<div class="comp-area-container container">
 			<img alt="area" class="area-item item-area-logo"
 				src="<?php echo get_stylesheet_directory_uri() ?>/images/fa-logo.png">
-				<p class="area-item">Roller Realty has become the number one choice for Seller , and the smart choice for Buyers. Our proven system works and our results speak for themselves. Even though Roller Realty is an intimate, small boutique office, our broken, Mike Roller, is continually recognized by the Houston Business Journal as one of the "Top 10" Realtors in the Houston Area, is regarded as one of the top agents in Texa, is ranked nationally in the "Top 100", and is recognized by Real Trends as one of the Best Agent in the nation.</p>
-				<div class="title-line"></div>	
+				<div class="area-item">
+					<p >Roller Realty has become the number one choice for Seller , and the smart choice for Buyers. Our proven system works and our results speak for themselves. Even though Roller Realty is an intimate, small boutique office, our broken, Mike Roller, is continually recognized by the Houston Business Journal as one of the "Top 10" Realtors in the Houston Area, is regarded as one of the top agents in Texa, is ranked nationally in the "Top 100", and is recognized by Real Trends as one of the Best Agent in the nation.</p>
+					<div class="title-line-primary"></div>	
+				</div>
 			</div>
 		</div>
 </section>
@@ -86,7 +87,7 @@
 		<img alt="team" class="item-team-logo"
 		src="<?php echo get_stylesheet_directory_uri() ?>/images/team-logo.png">
 		<div class="site-title-primary">
-			<div class="title-line"></div>			
+			<div class="title-line-primary"></div>			
 			<h4>Meet the</h4>
 			<h2>Team</h2>
 		</div>
@@ -96,10 +97,10 @@
 
 <!-- Residential -->
 <section class="hp-commercial">
-	<div class="site-title-primary">
+	<div class="site-title-primary title-line-secondary">
 		<h2>More than just residential</h2>
 		<h4>Commercial experts too</h4>
-		<div class="title-line"></div>			
+		<div class="title-line-primary"></div>			
 	</div>
 	<div class="region-commercial-container">
 		<div class="commercial-primary-section">
@@ -118,7 +119,6 @@
 			src="<?php echo get_stylesheet_directory_uri() ?>/images/thumbnail-3.jpg">
 		</div>
 	</div>
-	<div class="title-line"></div>
 </section>
 <!-- Residential end -->
 
@@ -163,6 +163,26 @@
 	</div>	
 </section>
 <!-- Contact Us end -->
+
+<!-- Hp Popup -->
+
+<div class="intro-popup">
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Hp Popup") ) : ?><?php endif ?>
+</div>
+<a href="#introPopupHolder" class="aios-content-popup introPopupTrigger">Intro Popup Form</a>
+<div class="aiosp-hide" id="introPopupHolder">
+    <div class="introPopupHolder-content">
+        <div class="intro-popup-title">
+            <h2 class="primary-text">Join our</h2>
+            <h3 class="secondary-text">Network</h3>
+            <p>Keep up to date with the latest market trends and opportunities</p>
+        </div>
+        <div class="intro-popup-form">
+			<?php echo do_shortcode('[contact-form-7 html_class="use-floating-validation-tip" id="34" title="Contact Popup Form"]')?>
+        </div>
+    </div>
+</div>
+<!-- popup form html -->
 
 <!-- your home html -->
 

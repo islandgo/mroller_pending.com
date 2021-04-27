@@ -54,7 +54,10 @@
 	});
 	
 	jQuery(window).on('load', function(){
-
+		setTimeout(function() {
+            jQuery('a.introPopupTrigger').trigger('click');
+            jQuery('.aios-popup-body').addClass('intro-popup-body');
+        },5000);
 
 	})
 

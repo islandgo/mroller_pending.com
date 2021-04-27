@@ -14,6 +14,15 @@ function register_ai_child_starter_theme_sidebars() {
     ));
 
 	register_sidebar(array( 
+		'name' => 'Hp Popup',
+		'id'=>'hp-popup',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+
+	register_sidebar(array( 
 		'name' => 'Header Logo',
 		'id'=>'hp-logo',
 		'before_widget' => '',
