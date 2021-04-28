@@ -8,19 +8,60 @@
 /* iPad(landscape) | iPad(landscape) | Galaxy Tab 4 (landscape) | Galaxy Tab 3 (landscape) */ 
 
 @media only screen and (max-width: 1450px) {
-	/* 1366px */
+	/* 1367px */
 
 	/* Header */
 
 	/* Header end */
 
+	/* Banner */
+	
+	.title-slide-show {
+		font-size: 132px;
+		min-height: 498px;
+		line-height: 108px;
+	}
+
+	/* Banner */
+
 
 	/* About Us */
+
+	.properties-content h2 {
+		padding: 0 322px 42px 0;
+		margin-top: 70px;
+	}
+
+	.site-title-primary h2 {
+		font-size: 80px;
+	}
+
+	.properties-content h4 {
+		padding: 0 180px 84px 0;
+	}
 
 	/* About Us end */
 
 
 	/* Area */
+
+	.region-area-container .site-title-primary h2 {
+		font-size: 60px;
+		line-height: 68px;
+		padding: 58px 0 0 0;
+	}
+
+	.region-area-container .site-title-primary h4 {
+		font-size: 32px;
+	}
+
+	.comp-area-container img {
+		padding: 80px 0 76px 0;
+	}
+
+	.comp-area-container p {
+		padding: 80px 0 74px 0;
+	}
 
 	/* Area end*/
 
@@ -31,6 +72,19 @@
 
 
 	/* Residential */
+
+	.hp-commercial {
+		padding-bottom: 44px;
+	}
+	
+	.hp-commercial .site-title-primary h4 {
+		font-size: 34px;
+	}
+	.site-title-primary h2 {
+		font-size: 76px;
+		padding-top: 68px;
+	}
+
 
 	/* Residential end */
 
@@ -54,6 +108,14 @@
 
 
 	/* About Us */
+
+	.comp-properties-container h3 {
+		font-size: 36px;
+	}
+
+	.properties-content h2 {
+		padding: 0 254px 42px 0;
+	}
 
 	/* About Us end */
 
@@ -83,21 +145,27 @@
 	/* Footer end */
 }
 
-
 @media only screen and (min-width: 992px) { 
 	/* Properties */
-	.region-properties-container {
+	.comp-properties-container {
         display: grid;
         grid-template-columns: repeat(100,1fr);
+		grid-template-rows: auto auto;
     }
 
-    .properties-primary-section {
+	.properties-title {
+		grid-column: 1 / 54;
+		grid-row: 1 / 2;
+	}
+
+    .properties-amount{
         grid-column: 1 / 47;
-
+		grid-row: 2 / 3;
     }
 
-    .properties-secondary-section {
+    .properties-content {
         grid-column: 57 / -1;
+		grid-row: 2 / 3;
     }
 
 	/* Area */

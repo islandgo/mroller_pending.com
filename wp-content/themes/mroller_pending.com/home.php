@@ -18,43 +18,46 @@
 <!-- About Us -->
 <section class="hp-properties">
 	<div class="region-properties-container">
-		<div class="properties-primary-section">
-			<div class="site-title-primary">
-				<h2>This is what we do</h2>
-				<h4>Our recent listed & sold properties</h4>
-				<div class="title-line-primary"></div>
+		<div class="comp-properties-container">
+			<div class="properties-title">
+				<div class="site-title-primary">
+					<h2>This is what we do</h2>
+					<h4>Our recent listed & sold properties</h4>
+					<div class="title-line-primary"></div>
+				</div>
 			</div>
-			<div class="comp-properties-container">
-				<a href="properties" class="properties-item">
-					<h3>$1,000,000 & Up</h3>
-					<img alt="properties" class="item-properties"
-						src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-1.jpg">
-				</a>
-				<a href="properties" class="properties-item">
-					<h3>$750,000 - $1,000,000</h3>
-					<img alt="properties" class="item-properties"
-						src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-2.jpg">
-				</a>
-				<a href="properties" class="properties-item">
-					<h3>$500,000 - $750,000</h3>
-					<img alt="properties" class="item-properties"
-						src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-3.jpg">
-				</a>
-				<a href="properties" class="properties-item">
-					<h3>$500,000 & Below</h3>
-					<img alt="properties" class="item-properties"
-						src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-4.jpg">
-				</a>
-
+			<div class="properties-amount">
+					<div class="properties-item">
+						<a href="properties" class="properties">
+							<h3>$1,000,000 & Up</h3>
+							<img alt="properties" class="img-properties"
+								src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-1.jpg">
+						</a>
+						<a href="properties" class="properties">
+							<h3>$750,000 - $1,000,000</h3>
+							<img alt="properties" class="img-properties"
+								src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-2.jpg">
+						</a>
+						<a href="properties" class="properties">
+							<h3>$500,000 - $750,000</h3>
+							<img alt="properties" class="img-properties"
+								src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-3.jpg">
+						</a>
+						<a href="properties" class="properties">
+							<h3>$500,000 & Below</h3>
+							<img alt="properties" class="img-properties"
+								src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-4.jpg">
+						</a>
+					</div>
+			</div>		
+			<div class="properties-content">
+				<div class="site-title-primary">
+					<h2>This is how well we do it</h2>
+					<div class="title-line-primary"></div>
+					<h4>What over 200 clients are saying about us</h4>
+				</div>
+					<a href="[blogurl]" class="search-btn-primary" aria-label="properties-btn">Read All About Us</a>
 			</div>
-		</div>
-		<div class="properties-secondary-section">
-			<div class="site-title-primary">
-				<h2>This is how well we do it</h2>
-				<div class="title-line-primary"></div>
-				<h4>What over 200 clients are saying about us</h4>
-			</div>
-			<a href="[blogurl]" class="search-btn-primary" aria-label="properties-btn">Read All About Us</a>
 		</div>
 	</div>
 </section>
