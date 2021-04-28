@@ -488,6 +488,7 @@ footer.footer {
 
     /* Banner */
     .hp-slideshow {
+        background-color: #ffffff;
         position: relative;
     }
     .title-slide-show {
@@ -533,9 +534,9 @@ footer.footer {
 
 	/* About Us */
 
-    .comp-properties-container {
+    /* .comp-properties-container {
         position: relative;
-    }
+    } */
     
     .properties-amount {
         position: relative;
@@ -584,6 +585,10 @@ footer.footer {
         letter-spacing: 0.05em;
         z-index: 1;
         color: #ffffff;
+    }
+
+    .properties-title {
+        background-color: #ffffff;
     }
     
     .properties-title h2 {
