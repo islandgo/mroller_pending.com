@@ -106,6 +106,15 @@
 
 	/* Header end */
 
+	/* Banner */
+
+	.title-slide-show {
+		font-size: 120px;
+		min-height: 431px;
+		line-height: 96px;
+	}
+
+	/* Banner end */
 
 	/* About Us */
 
@@ -156,7 +165,7 @@
 	.properties-title {
 		grid-column: 1 / -1;
 		grid-row: 1 / 2;
-		max-width: 637px;
+		max-width: 824px;
 	}
 
     .properties-amount{
@@ -202,7 +211,7 @@
     }
 
     .commercial-primary-section {
-        grid-column: 20 / 58;
+        grid-column: 19 / 57;
     }
 
     .commercial-secondary-section {
@@ -223,10 +232,48 @@
 
 	/* About Us */
 
+	.comp-properties-container img {
+		max-height: 190px;
+	}
+
+	.properties-content h2 {
+		padding: 0 182px 42px 0;
+	}
+
+	.properties-content h4 {
+		padding: 0 90px 84px 0;
+	}
+
+	.site-title-primary h4 {
+		font-size: 18px;
+	}
+
 	/* About Us end */
 
 
 	/* Area */
+
+	.hp-area {
+		padding-bottom: 0;
+	}
+
+	.region-area-container .site-title-primary h2 {
+		font-size: 56px;
+		line-height: 58px;
+		padding: 44px 0 0 0;
+	}
+
+	.region-area-container .site-title-primary h4 {
+		font-size: 24px;
+	}
+
+	.comp-area-container p {
+		max-width: 497px;
+	}
+
+	.item-area-logo {
+		grid-column: 10 / 32;
+	}
 
 	/* Area end*/
 
@@ -237,6 +284,33 @@
 
 
 	/* Residential */
+
+	.site-title-primary h2 {
+		font-size: 64px;
+		padding-top: 52px;
+	}
+
+	.hp-commercial .site-title-primary h4 {
+		font-size: 28px;
+	}
+
+	.commercial-primary-section {
+		grid-column: 10 / 52;
+	}
+
+	.commercial-primary-section p {
+		padding-bottom: 24px;
+		font-size: 15px;
+    	line-height: 28px;
+	}
+
+	.commercial-secondary-section img {
+		margin-bottom: 20px;
+	}
+
+	#menu-footer-menu a {
+		margin: 0 18px;
+	}
 
 	/* Residential end */
 
