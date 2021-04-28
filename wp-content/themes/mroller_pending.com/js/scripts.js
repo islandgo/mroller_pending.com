@@ -68,10 +68,7 @@
 						jQuery('.comp-hp-team-container div').removeClass('active');
 					}
 			);
-			jQuery('.team-img .map-details > div').hover(function () {
-				var currentID2 = jQuery(this).attr('data-area-id');
-				var target2 = jQuery('.map-hover-item[data-area-id="' + currentID2 + '"]');
-				target2.addClass('active');
+			jQuery('.comp-hp-team-container div').hover(function () {
 				jQuery(this).addClass('active');
 			}, function () {
 				jQuery(this).removeClass('active');

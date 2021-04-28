@@ -121,12 +121,8 @@
 					<h2>Jane</h2>
 					<h3>Miller</h3>
 					<span>Realtor</span>
-					[ai_phone href="1.281.346.0222"]
-					<span>281.346.0222</span>
-					[/ai_phone]
-					[mail_to email="Info@RollerRealty.Net"]
-					<span>Info@RollerRealty.Net</span>
-					[/mail_to]
+					<?php echo do_shortcode('[ai_phone href="+1.281.346.0222"] 281.346.0222 [/ai_phone]')?>
+					<?php echo do_shortcode('[mail_to email="Info@RollerRealty.Net"]Info@RollerRealty.Net[/mail_to]')?>
 					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
@@ -135,12 +131,8 @@
 					<h2>Jane</h2>
 					<h3>Miller</h3>
 					<span>Realtor</span>
-					[ai_phone href="1.281.346.0222"]
-					<span>281.346.0222</span>
-					[/ai_phone]
-					[mail_to email="Info@RollerRealty.Net"]
-					<span>Info@RollerRealty.Net</span>
-					[/mail_to]
+					<?php echo do_shortcode('[ai_phone href="+1.281.346.0222"] 281.346.0222 [/ai_phone]')?>
+					<?php echo do_shortcode('[mail_to email="Info@RollerRealty.Net"]Info@RollerRealty.Net[/mail_to]')?>
 					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
@@ -149,12 +141,8 @@
 					<h2>Jane</h2>
 					<h3>Miller</h3>
 					<span>Realtor</span>
-					[ai_phone href="1.281.346.0222"]
-					<span>281.346.0222</span>
-					[/ai_phone]
-					[mail_to email="Info@RollerRealty.Net"]
-					<span>Info@RollerRealty.Net</span>
-					[/mail_to]
+					<?php echo do_shortcode('[ai_phone href="+1.281.346.0222"] 281.346.0222 [/ai_phone]')?>
+					<?php echo do_shortcode('[mail_to email="Info@RollerRealty.Net"]Info@RollerRealty.Net[/mail_to]')?>
 					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
@@ -163,12 +151,8 @@
 					<h2>Jane</h2>
 					<h3>Miller</h3>
 					<span>Realtor</span>
-					[ai_phone href="1.281.346.0222"]
-					<span>281.346.0222</span>
-					[/ai_phone]
-					[mail_to email="Info@RollerRealty.Net"]
-					<span>Info@RollerRealty.Net</span>
-					[/mail_to]
+					<?php echo do_shortcode('[ai_phone href="+1.281.346.0222"] 281.346.0222 [/ai_phone]')?>
+					<?php echo do_shortcode('[mail_to email="Info@RollerRealty.Net"]Info@RollerRealty.Net[/mail_to]')?>
 					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
@@ -177,16 +161,23 @@
 					<h2>Jane</h2>
 					<h3>Miller</h3>
 					<span>Realtor</span>
-					[ai_phone href="1.281.346.0222"]
-					<span>281.346.0222</span>
-					[/ai_phone]
-					[mail_to email="Info@RollerRealty.Net"]
-					<span>Info@RollerRealty.Net</span>
-					[/mail_to]
+					<?php echo do_shortcode('[ai_phone href="+1.281.346.0222"] 281.346.0222 [/ai_phone]')?>
+					<?php echo do_shortcode('[mail_to email="Info@RollerRealty.Net"]Info@RollerRealty.Net[/mail_to]')?>
 					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
 
+		</div>
+		<div class="map-content">
+			<div class="team-holder">
+				<div class="team-logo">
+					<img alt="area" class="" src="http://localhost/isd-projects/mroller_pending.com/wp-content/themes/mroller_pending.com/images/team-logo.png">
+				</div>
+				<div class="team-title">
+					<h2>Meet The</h2>
+					<h4>Team</h4>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>	
