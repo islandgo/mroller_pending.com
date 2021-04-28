@@ -63,22 +63,24 @@
 <!-- Area -->
 <section class="hp-area">
 	<div class="region-area-container">
-		<div class="site-title-primary title-line-secondary">
-			<h2>Serving the are for over 30 years</h2>
-			<h4>Approaching $1 Billion in sales</h4>
-		</div>
-		<div class="comp-area-container container">
-			<img alt="area" class="area-item item-area-logo"
-				src="<?php echo get_stylesheet_directory_uri() ?>/images/fa-logo.png">
-			<div class="area-item">
+		<div class="comp-area-container">
+			<div class="site-title-primary title-line-secondary">
+				<h2>Serving the are for over 30 years</h2>
+				<h4>Approaching $1 Billion in sales</h4>
+			</div>
+			<div class="area-item item-area-logo">
+				<img alt="area" class=""
+					src="<?php echo get_stylesheet_directory_uri() ?>/images/fa-logo.png">
+			</div>
+			<div class="area-item area-paragraph">
 				<p>Roller Realty has become the number one choice for Seller , and the smart choice for Buyers. Our
 					proven system works and our results speak for themselves. Even though Roller Realty is an intimate,
 					small boutique office, our broken, Mike Roller, is continually recognized by the Houston Business
 					Journal as one of the "Top 10" Realtors in the Houston Area, is regarded as one of the top agents in
 					Texa, is ranked nationally in the "Top 100", and is recognized by Real Trends as one of the Best
 					Agent in the nation.</p>
-				<div class="title-line-primary"></div>
-			</div>
+					<div class="title-line-primary"></div>
+				</div>
 		</div>
 	</div>
 </section>
@@ -238,8 +240,29 @@
 			</div>
 
 			<div class="form-md pad-bot">
-				<label for="git-current"></label>
-				<input type="text" id="git-current" placeholder="Current Address (Optional)">
+				<select name="Optional" id="-git-address">
+					<option disabled="disabled" selected="selected">Current Address (Optional)</option>
+					<option>Address</option>
+					<option>Address</option>
+					<option>Address</option>
+				</select>
+			</div>
+			<div class="radio-btn">
+				<label class="radio-one" type="radio" checked="checked" name="">
+					<input type="radio" name="buyer-btn">
+				</label>
+				<span class="checkmark"></span>
+				Buyer
+				<label class="radio-one" type="radio" checked="checked" name="">
+					<input type="radio" name="Seller-btn">
+				</label>
+				<span class="checkmark"></span>
+				Seller
+				<label class="radio-one" type="radio" checked="checked" name="">
+					<input type="radio" name="Other-btn">
+				</label>
+				<span class="checkmark"></span>
+				Other
 			</div>
 
 			<div class="form-lg">

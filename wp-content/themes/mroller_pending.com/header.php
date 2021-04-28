@@ -23,10 +23,10 @@
 		<div class="container-fluid">
 			<div class="header-inner">
 				<div class="logo-holder">
-				<a aria-label="logo" href="[blogurl]">
-    				<img alt="logo" class="img-responsive main" src="<?php echo get_stylesheet_directory_uri() ?>/images/header-logo.png">
-   					<img alt="logo" class="img-responsive fixed" src="<?php echo get_stylesheet_directory_uri() ?>/images/fixed-logo.png">
-				</a>
+					<a aria-label="logo" href="[blogurl]">
+    					<img alt="logo" class="img-responsive main" src="<?php echo get_stylesheet_directory_uri() ?>/images/header-logo.png">
+   						<img alt="logo" class="img-responsive fixed" src="<?php echo get_stylesheet_directory_uri() ?>/images/fixed-logo.png">
+					</a>
 				</div>
 				<div class="header-info">
 					<div class="header-phone">
