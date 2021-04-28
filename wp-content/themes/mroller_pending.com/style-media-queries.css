@@ -154,8 +154,9 @@
     }
 
 	.properties-title {
-		grid-column: 1 / 54;
+		grid-column: 1 / -1;
 		grid-row: 1 / 2;
+		max-width: 637px;
 	}
 
     .properties-amount{
