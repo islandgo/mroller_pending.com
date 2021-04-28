@@ -132,7 +132,7 @@
 
 
 		setTimeout(function() {
-            // jQuery('a.introPopupTrigger').trigger('click');
+            jQuery('a.introPopupTrigger').trigger('click');
             jQuery('.aios-popup-body').addClass('intro-popup-body');
         },5000);
 

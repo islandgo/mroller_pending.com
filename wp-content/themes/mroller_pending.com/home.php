@@ -88,7 +88,6 @@
 
 <!-- Team -->
 <section class="hp-team">
-
 	<div class="comp-hp-team-container">
 		<div class="map">
 			<img src="<?php echo get_stylesheet_directory_uri() ?>/images/map-new.jpg" width="1600" height="855"
@@ -116,68 +115,78 @@
 		<div class="map-details">
 			<div class="map-det-1 map-det-font" data-area-id="1">
 				<div class="map-agent-name">
-					<span>Aaron Barber</span>
-					<em>Director of Marketing</em>
-				</div>
-				<div class="map-agent-email">
-					<a class="asis-mailto-obfuscated-email" data-value="aaron(at)sonomacountyhub(dotted)com"
-						href="mailto:aaron@sonomacountyhub.com">aaron@sonomacountyhub.com</a>
+					<h2>Jane</h2>
+					<h3>Miller</h3>
+					<span>Realtor</span>
+					[ai_phone href="1.281.346.0222"]
+					<span>281.346.0222</span>
+					[/ai_phone]
+					[mail_to email="Info@RollerRealty.Net"]
+					<span>Info@RollerRealty.Net</span>
+					[/mail_to]
+					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
 			<div class="map-det-2 map-det-font" data-area-id="2">
 				<div class="map-agent-name">
-					<span>Terry Meunruakham</span>
-					<em>Agent Coordinator Marketing &amp; Office Manager Assistant</em>
-				</div>
-				<div class="map-agent-email">
-					<a class="asis-mailto-obfuscated-email" data-value="frontdesk(at)sonomacountyub(dotted)com"
-						href="mailto:frontdesk@sonomacountyub.com">frontdesk@sonomacountyub.com</a>
+					<h2>Jane</h2>
+					<h3>Miller</h3>
+					<span>Realtor</span>
+					[ai_phone href="1.281.346.0222"]
+					<span>281.346.0222</span>
+					[/ai_phone]
+					[mail_to email="Info@RollerRealty.Net"]
+					<span>Info@RollerRealty.Net</span>
+					[/mail_to]
+					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
 			<div class="map-det-3 map-det-font" data-area-id="3">
 				<div class="map-agent-name">
-					<span>Karen Elizondo</span>
-					<em>C.A.R. Certified Transaction Coordinator</em>
-				</div>
-				<div class="map-agent-email">
-					<a class="asis-mailto-obfuscated-email" data-value="karen(at)sonomacountyhub(dotted)com "
-						href="mailto:karen@sonomacountyhub.com">karen@sonomacountyhub.com</a>
+					<h2>Jane</h2>
+					<h3>Miller</h3>
+					<span>Realtor</span>
+					[ai_phone href="1.281.346.0222"]
+					<span>281.346.0222</span>
+					[/ai_phone]
+					[mail_to email="Info@RollerRealty.Net"]
+					<span>Info@RollerRealty.Net</span>
+					[/mail_to]
+					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
 			<div class="map-det-4 map-det-font" data-area-id="4">
 				<div class="map-agent-name">
-					<span>Izzy Rendino</span>
-					<em>Assistant </em>
+					<h2>Jane</h2>
+					<h3>Miller</h3>
+					<span>Realtor</span>
+					[ai_phone href="1.281.346.0222"]
+					<span>281.346.0222</span>
+					[/ai_phone]
+					[mail_to email="Info@RollerRealty.Net"]
+					<span>Info@RollerRealty.Net</span>
+					[/mail_to]
+					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
 			<div class="map-det-5 map-det-font" data-area-id="5">
 				<div class="map-agent-name">
-					<span>Sully</span>
-					<em>The Dog </em>
+					<h2>Jane</h2>
+					<h3>Miller</h3>
+					<span>Realtor</span>
+					[ai_phone href="1.281.346.0222"]
+					<span>281.346.0222</span>
+					[/ai_phone]
+					[mail_to email="Info@RollerRealty.Net"]
+					<span>Info@RollerRealty.Net</span>
+					[/mail_to]
+					<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
 				</div>
 			</div>
 
 		</div>
 	</div>
-
-	<!-- <div class="region-team-container">
-		<div class="comp-team-container">
-			<h2>Jane</h2>
-			<h4>Miller</h4>
-			<span>Realtor</span>
-			<span>123.456.7890</span>
-			<span>Jane.RollerRealty.Net</span>
-		</div>
-		<a href="[blogurl]" class="search-btn-secondary" aria-label="team-btn">Read More</a>
-		<img alt="team" class="item-team-logo"
-		src="<?php echo get_stylesheet_directory_uri() ?>/images/team-logo.png">
-		<div class="site-title-primary">
-			<div class="title-line-primary"></div>			
-			<h4>Meet the</h4>
-			<h2>Team</h2>
-		</div>
-	</div> -->
-</section>
+</section>	
 <!-- Team end -->
 
 <!-- Residential -->
@@ -252,17 +261,17 @@
 					<input type="radio" name="buyer-btn">
 				</label>
 				<span class="checkmark"></span>
-				Buyer
+				<h2>Buyer</h2>
 				<label class="radio-one" type="radio" checked="checked" name="">
 					<input type="radio" name="Seller-btn">
 				</label>
 				<span class="checkmark"></span>
-				Seller
+				<h2>Seller</h2>
 				<label class="radio-one" type="radio" checked="checked" name="">
 					<input type="radio" name="Other-btn">
 				</label>
 				<span class="checkmark"></span>
-				Other
+				<h2>Other</h2>
 			</div>
 
 			<div class="form-lg">
@@ -272,9 +281,11 @@
 					<input type="submit" value="talk to you soon!" class="primary-btn">
 				</div>
 			</div>
-			<a href="[blogurl]" class="search-btn-primary" aria-label="contact-us-btn">Read our market insight
-				reports</a>
 		</div>
+	</div>
+	<div class="btn-holder">
+		<a href="[blogurl]" class="search-btn-primary" aria-label="contact-us-btn">Read our market insight
+			reports</a>
 	</div>
 </section>
 <!-- Contact Us end -->
@@ -285,9 +296,8 @@
 	<div class="aiosp-hide" id="introPopupHolder">
 		<div class="introPopupHolder-content">
 			<div class="intro-popup-title">
-				<h2 class="primary-text">Join our</h2>
-				<h3 class="secondary-text">Network</h3>
-				<p>Keep up to date with the latest market trends and opportunities</p>
+				<h2 class="primary-text">Newsletter</h2>
+				<p>Keep up to date with the latest market trends and opportunities in the Fulshear-Katy area</p>
 			</div>
 			<div class="intro-popup-form">
 				<?php echo do_shortcode('[contact-form-7 html_class="use-floating-validation-tip" id="34" title="Contact Popup Form"]')?>
