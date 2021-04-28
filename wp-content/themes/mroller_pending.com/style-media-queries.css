@@ -83,6 +83,67 @@
 	/* Footer end */
 }
 
+
+@media only screen and (min-width: 992px) { 
+	/* Properties */
+	.region-properties-container {
+        display: grid;
+        grid-template-columns: repeat(100,1fr);
+    }
+
+    .properties-primary-section {
+        grid-column: 1 / 47;
+
+    }
+
+    .properties-secondary-section {
+        grid-column: 57 / -1;
+    }
+
+	/* Area */
+
+	.comp-area-container {
+        display: grid;
+        grid-template-columns: repeat(100,1fr);
+        grid-template-rows: auto auto;
+        max-width: 1600px;
+    }
+
+    .title-line-secondary {
+        grid-column: 1 / 70;
+        grid-row: 1 / 2;
+    }
+
+    .item-area-logo {
+        grid-column: 15 / 37;
+        grid-row: 2 / 3;
+    }
+
+    .area-paragraph {
+        grid-column: 40 / -1;
+        grid-row: 2 / 3;
+    }
+
+	/* Commercial */
+
+	.region-commercial-container {
+        display: grid;
+        grid-template-columns: repeat(100,1fr);
+        padding-top: 86px;
+    }
+
+    .commercial-primary-section {
+        grid-column: 20 / 58;
+    }
+
+    .commercial-secondary-section {
+        grid-column: 63 / -1;
+        position: relative;
+        z-index: 1;
+        align-self: start;
+    }
+}
+
 @media only screen and (max-width: 1199px) {
 	/* 992 */
 
@@ -126,6 +187,10 @@
 	/* 768 */
 
 	/* Header */
+
+	.header-inner {
+		display: none;
+	}
 
 	/* Header end */
 
