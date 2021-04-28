@@ -488,7 +488,6 @@ footer.footer {
 
     /* Banner */
     .hp-slideshow {
-        background-color: #ffffff;
         position: relative;
     }
     .title-slide-show {
@@ -585,10 +584,6 @@ footer.footer {
         letter-spacing: 0.05em;
         z-index: 1;
         color: #ffffff;
-    }
-
-    .properties-title {
-        background-color: #ffffff;
     }
     
     .properties-title h2 {
@@ -892,17 +887,6 @@ footer.footer {
         margin-bottom: 24px;
     }
 
-    .region-commercial-container .commercial-secondary-section::after {
-        content: ' ';
-        width: 85%;
-        background: #a11e21;
-        z-index: -1;
-        position: absolute;
-        top: 50%;
-        left: -30px;
-        height: 104%;
-        transform: translateY(-52%);
-    }
 
 	/* Residential end */
 

@@ -59,10 +59,6 @@
 		padding: 80px 0 76px 0;
 	}
 
-	.comp-area-container p {
-		padding: 80px 0 74px 0;
-	}
-
 	/* Area end*/
 
 
@@ -335,15 +331,80 @@
 		display: none;
 	}
 
+	/* Fixed Header */
+
+	.amh-header-buttons .amh-navigation-trigger, .amh-header-buttons .amh-center, .amh-header-buttons .amh-header-right-btn {
+		padding: 21px 0;
+		height: 86px;
+		font-size: 40px;
+	}
+
 	/* Header end */
+
+	/* Banner */
+
+	.title-slide-show {
+		font-size: 52px;
+		min-height: 232px;
+		line-height: 52px;
+		max-width: 142px;
+		padding-left: 15px;
+	}
+
+	.title-slide-show .title-slide-secondary::after {
+		width: 8px;
+		height: 8px;
+		bottom: 15px;
+		right: -16px;
+	}
+
+	/* Banner end */
 
 
 	/* About Us */
 
+	.comp-properties-container img {
+		max-height: 240px;
+	}
+
+	.properties-amount {
+		padding: 0 74px;
+	}
+	
+	.properties-amount .properties-item::after {
+		left: 0;
+	}
+
+	.properties-content h2 {
+		padding: 0 182px 20px 44px;
+	}
+
+	.properties-content h4 {
+		padding: 0 90px 72px 44px;
+	}
+
+	.site-title-primary h4 {
+		font-size: 22px;
+	}
+	
 	/* About Us end */
 
 
 	/* Area */
+	.region-area-container .site-title-primary {
+		padding-left: 40px;
+	}
+
+	.comp-area-container p {
+		padding: 30px 0 40px 0;
+		max-width: 498px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.item-area-logo {
+		text-align: center;
+	}
 
 	/* Area end*/
 
@@ -355,15 +416,81 @@
 
 	/* Residential */
 
+	.hp-commercial .site-title-primary h4 {
+		font-size: 30px;
+	}
+
+	.title-line-secondary {
+		margin-left: 104px;
+	}
+
+	.commercial-primary-section p {
+		margin: 0 auto;
+		text-align: center;
+		max-width: 618px;
+		padding-top: 24px;
+	}
+
+	.commercial-secondary-section img {
+		padding: 0 74px;
+	}
+
 	/* Residential end */
 
 
 	/* Contact Us */
 
+	.site-form {
+		font-size: 0;
+		padding: 54px 80px;
+	}
+
+	.form-md.pad-left {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.form-md.pad-right {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.btn-holder {
+		max-width: 376px;
+	}
+
 	/* Contact Us end */
 
 
 	/* Footer */
+
+	.footer-info {
+		flex-direction: column;
+		padding-bottom: 34px;
+		font-size: 16px;
+	}
+
+	.footer-info .footer-address {
+		margin-left: 0;
+		max-width: 170px;
+		padding: 24px 0;
+	}
+
+	.footer-info .footer-email {
+		margin-left: 0;
+		padding-bottom: 20px;
+	}
+
+	#menu-footer-menu {
+		flex-direction: column;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	#menu-footer-menu li {
+		padding-bottom: 24px;
+	}
+	
 	
 	/* Footer end */
 	
@@ -391,15 +518,98 @@
 
 	/* Header */
 
+
+	/* Banner */
+
+	.title-slide-show {
+		font-size: 42px;
+		min-height: 172px;
+		line-height: 41px;
+		max-width: 123px;
+	}
+
+
 	/* Header end */
 
 
 	/* About Us */
 
+	.site-title-primary h2 {
+		font-size: 47px;
+		padding: 24px 0;
+		max-width: 245px;
+		line-height: 60px;
+	}
+
+	.site-title-primary h4 {
+		font-size: 18px;
+	}
+
+	.comp-properties-container h3 {
+		font-size: 20px;
+	}
+
+	.site-title-primary h2 {
+		padding: 24px 0;
+		max-width: 336px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	.properties-title .site-title-primary h4{
+		max-width: 262px;
+	}
+
+	.properties-title h4 {
+		padding: 0;
+	}
+
+	.site-title-primary h4 {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 306px;
+	}
+
+	.properties-content h4 {
+		padding: 0;
+	}
+
+	.properties-content .title-line-primary {
+		padding-bottom: 22px;
+	}
+
+
 	/* About Us end */
 
 
 	/* Area */
+
+	.region-area-container .site-title-primary {
+		padding-left: 0;
+	}
+
+	.region-area-container .site-title-primary {
+		margin-left: 32px;
+	}
+
+	.region-area-container .site-title-primary h2 {
+		font-size: 52px;
+		line-height: 50px;
+		padding: 29px 0;
+	}
+
+	.region-area-container .site-title-primary h4 {
+		font-size: 20px;
+	}
+
+	.comp-area-container img {
+		padding: 52px 0;
+	}
+
+	.comp-area-container p {
+		font-size: 20px;
+		max-width: 356px;
+	}
 
 	/* Area end*/
 
@@ -410,6 +620,23 @@
 
 
 	/* Residential */
+
+	.site-form {
+		padding: 54px 48px;
+	}
+
+	.title-line-secondary {
+		margin-left: 34px;
+	}
+
+	.title-line-secondary {
+		padding-left: 0;
+	}
+
+	.commercial-primary-section p {
+		font-size: 18px;
+		max-width: 344px;
+	}
 
 	/* Residential end */
 
