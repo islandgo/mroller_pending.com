@@ -56,7 +56,9 @@
 					<div class="title-line-primary"></div>
 					<h4>What over 200 clients are saying about us</h4>
 				</div>
+				<div class="btn-holder">
 					<a href="[blogurl]" class="search-btn-primary" aria-label="properties-btn">Read All About Us</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -206,12 +208,18 @@
 				office complex in the hear of downtown fulshear.</p>
 		</div>
 		<div class="commercial-secondary-section">
-			<img alt="commercial" class="item-commercial"
-				src="<?php echo get_stylesheet_directory_uri() ?>/images/thumbnail-1.jpg">
-			<img alt="commercial" class="item-commercial"
-				src="<?php echo get_stylesheet_directory_uri() ?>/images/thumbnail-2.jpg">
-			<img alt="commercial" class="item-commercial"
-				src="<?php echo get_stylesheet_directory_uri() ?>/images/thumbnail-3.jpg">
+			<a href="commercial" class="item-commercial">
+				<img alt="commercial"
+					src="<?php echo get_stylesheet_directory_uri() ?>/images/thumbnail-1.jpg">
+			</a>
+			<a href="commercial" class="item-commercial">
+				<img alt="commercial"
+					src="<?php echo get_stylesheet_directory_uri() ?>/images/thumbnail-2.jpg">
+			</a>
+			<a href="commercial" class="item-commercial">
+				<img alt="commercial"
+					src="<?php echo get_stylesheet_directory_uri() ?>/images/thumbnail-3.jpg">		
+			</a>
 		</div>
 	</div>
 </section>
@@ -250,21 +258,21 @@
 					<option>Address</option>
 				</select>
 			</div>
-			<div class="radio-btn">
-				<label class="radio-one" type="radio" checked="checked" name="">
-					<input type="radio" name="buyer-btn">
+			<div class="radio-item">
+				<label class="radio-btn">
+					<input type="radio" name="radio">
+					<span class="checkmark"></span>
 				</label>
-				<span class="checkmark"></span>
 				<h2>Buyer</h2>
-				<label class="radio-one" type="radio" checked="checked" name="">
-					<input type="radio" name="Seller-btn">
+				<label class="radio-btn">
+					<input type="radio" name="radio">
+					<span class="checkmark"></span>
 				</label>
-				<span class="checkmark"></span>
 				<h2>Seller</h2>
-				<label class="radio-one" type="radio" checked="checked" name="">
-					<input type="radio" name="Other-btn">
+				<label class="radio-btn">
+					<input type="radio" name="radio">
+					<span class="checkmark"></span>
 				</label>
-				<span class="checkmark"></span>
 				<h2>Other</h2>
 			</div>
 

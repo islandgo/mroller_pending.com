@@ -244,6 +244,7 @@
 		font-size: 18px;
 	}
 
+
 	/* About Us end */
 
 
@@ -325,6 +326,21 @@
 @media only screen and (max-width: 991px) {
 	/* 768 */
 
+	/* Popup */
+
+	.intro-popup-form {
+		padding: 42px 45px;
+	}
+
+	.aiosp-wrap .aiosp-container .aios-popup-body {
+		padding: 46px 0 8px;
+	}
+
+	.intro-popup-title h2 {
+		font-size: 82px;
+	}
+	/* Popup end */
+
 	/* Header */
 
 	.header-inner {
@@ -386,6 +402,13 @@
 	.site-title-primary h4 {
 		font-size: 22px;
 	}
+
+	.properties-content .btn-holder {
+		margin: 0 auto;
+		padding: 20px 0;
+		max-width: 376px;
+	}
+
 	
 	/* About Us end */
 
@@ -455,10 +478,6 @@
 		padding-left: 0;
 	}
 
-	.btn-holder {
-		max-width: 376px;
-	}
-
 	/* Contact Us end */
 
 
@@ -515,6 +534,26 @@
 /* Galaxy Tab 3(portrait) | Galaxy S5(landscape) */ 
 @media only screen and (max-width: 767px) {
 	/* 481 */
+
+	/* Popup */
+	
+	.aiosp-wrap .aiosp-container .aios-popup-body {
+		width: 85%;
+		min-height: 562px;
+	}
+
+	.intro-popup-title h2 {
+		font-size: 60px;
+	}
+
+	.intro-popup-title p {
+    	max-width: 215px;
+	}
+
+	.intro-popup-form {
+		padding: 42px 32px;
+	}
+	/* Popup end */
 
 	/* Header */
 
@@ -643,12 +682,43 @@
 
 	/* Contact Us */
 
+	.site-form {
+		padding: 54px 48px;
+	}
+
 	/* Contact Us end */
 
 
 	/* Footer */
+
+	.footer-logo .img-logo {
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.footer-logo .img-award {
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.lower-footer p {
+		flex-direction: column;
+	}
 	
 	/* Footer end */
+
+	/* Fixed Smi */
+
+	.fixed-smi a {
+		width: 34px;
+		height: 34px;
+	}
+
+	.fixed-smi {
+		right: 18px;
+	}
+
+	/* Fixed Smi end */
     .ip-banner .container{
         width: 100%;
     }
@@ -658,17 +728,118 @@
 @media only screen and (max-width: 480px) {
 	/* 321 */
 
+	/* Popup */
+
+	.intro-popup-title h2 {
+		font-size: 46px;
+	}
+
+	.intro-popup-title p {
+		font-size: 12px;
+	}
+
+	.intro-popup-form {
+		padding: 24px 32px;
+	}
+
+	/* Popup end */
+
 	/* Header */
+
+	/* Banner */
+
+	.title-slide-show {
+		font-size: 26px;
+		min-height: 95px;
+		line-height: 22px;
+		max-width: 74px;
+		padding-left: 10px;
+		border-left: solid 2px #ffffff;
+	}
+
+	.title-slide-show .title-slide-secondary::after {
+		width: 4px;
+		height: 4px;
+		bottom: 9px;
+		right: -8px;
+	}
+
+	.title-slide-show .title-slide-primary::after {
+		width: 8px;
+		height: 8px;
+		left: -5px;
+	}
 
 	/* Header end */
 
 
 	/* About Us */
 
+	.title-line-primary {
+		border-top: #a11e21 solid 2px;
+	}
+
+	.site-title-primary h2 {
+		padding: 10px 0;
+		font-size: 32px;
+		max-width: 227px;
+		line-height: 34px;
+	}
+
+	.site-title-primary h4 {
+		font-size: 14px;
+		line-height: 24px;
+		max-width: 278px;
+	}
+
+	.title-line-primary {
+		padding-bottom: 34px;
+	}
+	.comp-properties-container h3 {
+		font-size: 14px;
+	}
+
+	.properties-amount {
+		padding: 0 44px;
+	}
+
+	.properties-content .btn-holder {
+		max-width: 230px;
+	}
+
+	.properties-content .btn-holder a {
+		min-height: 60px;
+		max-width: 400px;
+		border: 3px solid #a11e21;
+		font-weight: 500;
+		font-size: 14px;
+	}	
+	
 	/* About Us end */
-
-
+	
+	
 	/* Area */
+	
+	.region-area-container .site-title-primary h2 {
+		font-size: 32px;
+		line-height: 38px;
+		padding: 24px 0;
+	}
+
+	.region-area-container .site-title-primary h4 {
+		font-size: 16px;
+		max-width: 205px;
+	}
+
+	.comp-area-container img {
+		max-width: 200px;
+	}
+
+	.comp-area-container p {
+		font-size: 14px;
+		max-width: 237px;
+		line-height: 24px;
+	}
 
 	/* Area end*/
 
@@ -679,16 +850,114 @@
 
 
 	/* Residential */
+	.hp-commercial {
+		border-bottom: solid 6px #a11e21;
+	}
+
+	.hp-commercial .site-title-primary h4 {
+		font-size: 18px;
+	}
+
+	.title-line-secondary {
+		border-left: solid 2px #a11e21;
+	}
+
+	.title-line-secondary::after {
+		width: 8px;
+		height: 8px;
+		left: -5px;
+	}
+
+	.commercial-primary-section p {
+		font-size: 14px;
+		max-width: 237px;
+		line-height: 24px;
+	}
+
+	.commercial-secondary-section img {
+		padding: 0 44px;
+		margin-bottom: 14px;
+	}
 
 	/* Residential end */
 
 
 	/* Contact Us */
 
+	.hp-contact-us {
+		padding: 54px 15px 38px;
+	}
+
+	.region-contact-container::after, .region-contact-container::before {
+		width: 26%;
+	}
+	
+	.region-contact-container .title-primary {
+		font-size: 14px;
+	}
+
+	.site-form {
+    	padding: 0 20px;
+		padding-bottom: 50px;
+	}
+	
+	.form-md input, .form-lg textarea, select {
+		min-height: 46px;
+		font-size: 8px;
+		padding-left: 10px;
+	}
+
+	.site-form .form-lg textarea {
+		padding-top: 11px;
+		min-height: 80px;
+	}
+
+	.radio-item h2 {
+		padding: 6px;
+	}
+
+	.checkmark {
+		height: 14px;
+		width: 14px;
+	}
+
+	.region-contact-container .primary-btn {
+		font-size: 10px;
+		min-height: 36px;
+		width: 158px;
+	}
+
+	.btn-holder a {
+		font-size: 10px;
+		max-width: 256px;
+	}
+
+	.btn-holder {
+		font-size: 10px;
+		max-width: 256px;
+	}
+
 	/* Contact Us end */
 
 
 	/* Footer */
+
+	.footer-logo .img-logo {
+		max-width: 242px;
+	}
+
+	.footer-logo .img-award {
+		max-width: 242px;
+	}
+
+	.footer-info {
+		font-size: 14px;
+	}
+
+	#menu-footer-menu {
+		font-size: 16px;
+		line-height: 24px;
+	}
 	
 	/* Footer end */
 

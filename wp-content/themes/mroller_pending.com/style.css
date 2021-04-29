@@ -242,7 +242,6 @@ header.header {
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     background: #000;
-    display: none;
 }
 
 header.header.show-fixed::before {
@@ -267,7 +266,7 @@ header.header.show-fixed::before {
 }
 
 .header-inner {
-    display: none;
+    display: block;
     max-width: 1390px;
     margin: 0 auto;
 }
@@ -570,6 +569,8 @@ footer.footer {
         align-items: center;
         justify-content: center;
         margin-bottom: 12px;
+        cursor: auto;
+        pointer-events: none;
     }
     
     .comp-properties-container img {
@@ -608,6 +609,22 @@ footer.footer {
 
     .properties-title .title-line-primary {
         max-width: 726px;
+    }
+
+    .properties-content .btn-holder {
+        margin: 0;
+    }
+
+    .properties-content .btn-holder a {
+        width: 100%;
+        min-height: 74px;
+        max-width: 430px;
+        border: 4px solid #a11e21;
+        margin-top: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.05em;
     }
 
 
@@ -886,6 +903,11 @@ footer.footer {
         margin-bottom: 24px;
     }
 
+    .commercial-secondary-section a {
+        cursor: auto;
+        pointer-events: none;
+    }
+
 
 	/* Residential end */
 
@@ -959,7 +981,7 @@ footer.footer {
         font-size: 13px;
         display: block;
         text-transform: uppercase;
-        height: 47px;
+        min-height: 47px;
         width: 190px;
         font-style: italic;
         border: none;
@@ -998,10 +1020,77 @@ footer.footer {
         text-transform: uppercase;
     }
 
-    .radio-btn {
+    .radio-item {
+        display: flex;
         font-size: 14px;
-        padding: 17px 0 28px;
+        align-items: center;
+        padding-bottom: 14px;
     }
+
+    .radio-item h2 {
+        padding: 14px;
+    }
+
+    /* background-color: #ffffff61;
+    background-color: #a11e21 */
+
+    .radio-btn {
+        display: block;
+        position: relative;
+        padding-left: 16px;
+        margin-bottom: 16px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+      
+      /* Hide the browser's default radio button */
+      .radio-btn input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        pointer-events: none;
+      }
+      
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background-color: #ffffff61;
+        border-radius: 50%;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .radio-btn:hover input ~ .checkmark {
+        background-color: #ffffff61;
+      }
+      
+      /* When the radio button is checked, add a blue background */
+      .radio-btn input:checked ~ .checkmark {
+        background-color: #a11e21;
+      }
+      
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the indicator (dot/circle) when checked */
+      .radio-btn input:checked ~ .checkmark:after {
+        display: block;
+      }
 
     .hp-contact-us .site-title-primary h2 {
         color: #fff;
@@ -1036,7 +1125,7 @@ footer.footer {
 
     .btn-holder {
         display: flex;
-        height: 49px;
+        min-height: 49px;
         max-width: 410px;
         border: 2px solid #fff;
         justify-content: center;
