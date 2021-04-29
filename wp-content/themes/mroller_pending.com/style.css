@@ -698,7 +698,6 @@ footer.footer {
         color: #fff;
         padding: 45px 0 56px;
         z-index: 9;
-        pointer-events: none;
         top: 50%;
         right: 39%;
         letter-spacing: .1em;
