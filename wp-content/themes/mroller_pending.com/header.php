@@ -19,25 +19,10 @@
     <?php do_action('aios_neighborhoods_header'); ?>
 
 
-	<header class="header">
+	<header class="header hidden">
 		<div class="container-fluid">
 			<div class="header-inner">
-				<div class="logo-holder">
-					<a aria-label="logo" href="[blogurl]">
-    					<img alt="logo" class="img-responsive main" src="<?php echo get_stylesheet_directory_uri() ?>/images/header-logo.png">
-   						<img alt="logo" class="img-responsive fixed" src="<?php echo get_stylesheet_directory_uri() ?>/images/fixed-logo.png">
-					</a>
-				</div>
-				<div class="header-info">
-					<div class="header-phone">
-						<span class="ai-font-phone"></span>
-						<?php echo do_shortcode('[ai_phone href="+1.281.346.0222"]281.346.0222[/ai_phone]')?>
-					</div>
-					<div class="header-email">
-						<span class="ai-font-envelope-f img-email"></span>
-						<?php echo do_shortcode('[mail_to email="Info@RollerRealty.Net"]Info@RollerRealty.Net[/mail_to]')?>
-					</div>
-				</div>
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header") ) : ?><?php endif ?>
 				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_id' => 'nav2', 'theme_location' => 'primary-menu','container_class' => 'row' ) ); ?>
 			</div>
 		</div>

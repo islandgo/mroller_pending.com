@@ -22,11 +22,11 @@
 			jQuery(".header-inner #nav2").splitNav({
 				logo: '.logo-holder',
 				navClasses : 'col-md-4',
-				roundoff : false
+				splitCount: 4,
+				splitCountEqual: false
 			});
 			
 			jQuery('.logo-holder').addClass('col-md-4 no-padding');
-			console.log(324324);
 		},
 		
 		initNavigation: function() {
@@ -125,8 +125,7 @@
 	jQuery(window).on('load', function(){
 		jQuery('.logo-holder').prev().addClass('nav-left');
         jQuery('.logo-holder').next().addClass('nav-right');
-        jQuery('header.header').css({'opacity' : 1});
-
+        jQuery('header.header').removeClass("hidden");
 
 		setTimeout(function() {
             jQuery('a.introPopupTrigger').trigger('click');

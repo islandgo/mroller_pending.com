@@ -12,6 +12,10 @@
 
 	/* Header */
 
+	.nav2 li:hover>.sub-menu li a {
+		padding: 0px 63px;
+	}
+
 	/* Header end */
 
 	/* Banner */
@@ -100,14 +104,40 @@
 
 	/* Header */
 
+	.header-info {
+		font-size: 12px;
+	}
+
+	#nav li a, .nav2 li a {
+		font-size: 12px;
+	}
+
+	.aios-split-nav.nav-left .sub-menu li a {
+		font-size: 10px;
+	}
+
+	.nav2 li:hover>.sub-menu li a {
+		padding: 0;
+		padding-top: 10px;
+	}
+
+	#nav .sub-menu, .nav2 .sub-menu {
+		min-width: 130px;
+	}
+
+	.nav2 li:hover>.sub-menu {
+		margin-left: 50px;
+	}
+
 	/* Header end */
 
 	/* Banner */
 
 	.title-slide-show {
-		font-size: 120px;
-		min-height: 431px;
-		line-height: 96px;
+		font-size: 93px;
+		min-height: 356px;
+		line-height: 77px;
+		max-width: 256px;
 	}
 
 	/* Banner end */
@@ -223,6 +253,7 @@
 
 	/* Header */
 
+
 	/* Header end */
 
 
@@ -242,6 +273,19 @@
 
 	.site-title-primary h4 {
 		font-size: 18px;
+	}
+
+	#nav li a, .nav2 li a {
+		font-size: 10px;
+	}
+
+	.header-info {
+		font-size: 11px;
+	}
+
+	.header-inner .logo-holder img {
+		max-width: 50%;
+		width: 100%;
 	}
 
 
@@ -343,7 +387,34 @@
 
 	/* Header */
 
-	.header-inner {
+	.aios-mobile-header-wrapper {
+		z-index: 1020!important;
+	}
+
+	header.header {
+		position: relative;
+		background: #000;
+		padding: 38px 0;
+		margin-top: 53px;
+	}
+
+	.header-inner>.row {
+		justify-content: center;
+	}
+
+	.header-inner .logo-holder img.fixed {
+		display: block;
+	}
+
+	.header-inner .logo-holder img {
+		display: none;
+	}
+
+	.aios-split-nav {
+		display: none;
+	}
+
+	.header-info {
 		display: none;
 	}
 
@@ -726,6 +797,7 @@
 
 /* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 
 @media only screen and (max-width: 480px) {
+
 	/* 321 */
 
 	/* Popup */
@@ -886,6 +958,16 @@
 
 	.hp-contact-us {
 		padding: 54px 15px 38px;
+	}
+
+	.site-form div.wpcf7-response-output {
+		font-size: 8px;
+		bottom: -48px;
+	}
+
+	.intro-popup-form div.wpcf7-response-output {
+		font-size: 7px;
+		bottom: 59px;
 	}
 
 	.region-contact-container::after, .region-contact-container::before {

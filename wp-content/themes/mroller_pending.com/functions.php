@@ -14,35 +14,8 @@ function register_ai_child_starter_theme_sidebars() {
     ));
 
 	register_sidebar(array( 
-		'name' => 'Hp Popup',
-		'id'=>'hp-popup',
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => ''
-	 ));
-
-	register_sidebar(array( 
-		'name' => 'Header Logo',
-		'id'=>'hp-logo',
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => ''
-	 ));
-
-	 register_sidebar(array( 
-		'name' => 'Header Text',
-		'id'=>'header-text',
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => ''
-	 ));
-
-	 register_sidebar(array( 
-		'name' => 'Fixed Logo',
-		'id'=>'fixed-logo',
+		'name' => 'Header',
+		'id'=>'header',
 		'before_widget' => '',
 		'after_widget' => '',
 		'before_title' => '',
@@ -57,7 +30,79 @@ function register_ai_child_starter_theme_sidebars() {
 		'before_title' => '',
 		'after_title' => ''
 	 ));
+
+	 register_sidebar(array( 
+		'name' => 'Hp Properties',
+		'id'=>'hp-properties',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+
+	 register_sidebar(array( 
+		'name' => 'Hp Area',
+		'id'=>'hp-area',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+
+	 register_sidebar(array( 
+		'name' => 'Hp Team',
+		'id'=>'hp-team',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+
+	 register_sidebar(array( 
+		'name' => 'Hp Commercial',
+		'id'=>'hp-commercial',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+
+	 register_sidebar(array( 
+		'name' => 'Hp Contact Us',
+		'id'=>'hp-contact-us',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+
+	 register_sidebar(array( 
+		'name' => 'Footer',
+		'id'=>'footer',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+	 
+	 register_sidebar(array( 
+		'name' => 'Intro Popup',
+		'id'=>'Intro-popup',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
 	
+	 register_sidebar(array( 
+		'name' => 'Fixed Smi',
+		'id'=>'fixed-smi',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+
 }
 
 add_action( 'widgets_init', 'register_ai_child_starter_theme_sidebars', 11 );
@@ -67,9 +112,9 @@ add_action( 'widgets_init', 'register_ai_child_starter_theme_sidebars', 11 );
  */
 function ai_starter_theme_enqueue_child_assets() {
 	
-	wp_enqueue_style('fonts-Libre Baskerville','https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+	wp_enqueue_style('fonts-Libre-Baskerville','https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 	
-	wp_enqueue_style('fonts-Bebas Neue','https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+	wp_enqueue_style('fonts-Bebas-Neue','https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 	
 	/* Enqueue my scripts */

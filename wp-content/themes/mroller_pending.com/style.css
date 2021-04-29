@@ -126,7 +126,7 @@ a,a:hover,a:visited,a:focus,input,input:focus,textarea,textarea:focus,select:foc
     position: relative;
 }
 
-#nav>li::after, .nav2>li::after {
+#nav>li::after, .nav-right>li::after,.nav-left>li:not(:first-child):after {
     content: '';
     position: absolute;
     width: 0;
@@ -143,6 +143,8 @@ a,a:hover,a:visited,a:focus,input,input:focus,textarea,textarea:focus,select:foc
     opacity: 0;
     pointer-events: none;
 }
+
+
 
 #nav>li:hover::after, .nav2>li:hover::after {
     opacity: 1;
@@ -168,7 +170,7 @@ a,a:hover,a:visited,a:focus,input,input:focus,textarea,textarea:focus,select:foc
     padding: 0;
     position: absolute;
     width: 100%;
-    min-width: 198px;
+    min-width: 168px;
     left: 50%;
     transform: translateX(-50%);
     padding-top: 15px;
@@ -208,8 +210,8 @@ header.header {
     font-size: 0;
     position: fixed;
     padding: 18px 0;
-    opacity: 0;
     z-index: 1010;
+    margin-top: 14px;
     top: 0;
     left: 0;
     width: 100%;
@@ -224,6 +226,85 @@ header.header {
     color: #ffffff;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: -4px;
+}
+
+.header-inner span {
+    padding-right: 12px;
+}
+
+.header-phone {
+    padding-right: 33px;
+}
+
+.show-fixed .aios-split-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.header.show-fixed {
+    margin-top: 0;
+}
+
+.header-phone:hover, 
+.header-email:hover {
+    color: #fff;
+    opacity: .7;
+}
+
+.aios-split-nav.nav-left>li:nth-of-type(1) a {
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    background: url(images/search-icon.png) no-repeat;
+    display: block;
+}
+
+.aios-split-nav.nav-left .sub-menu li a{
+    font-size: 12px ;
+    letter-spacing: 0.08em;
+    background: transparent ;
+}
+
+.nav2 li:hover>.sub-menu {
+    padding-top: 48px;
+}
+
+.nav-left > li:first-child ul.sub-menu li:first-child::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #a11e21;
+    top: 0;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-left > li:first-child ul.sub-menu li:first-child::after{
+    opacity: 1;
+    width: 50%;
+}
+.nav-left > li:first-child ul.sub-menu li:first-child {
+    padding-top: 5px;
+}
+
+.nav-left > li:first-child ul.sub-menu li:last-child {
+    padding-bottom: 5px;
+}
+
+.nav2 li:hover>.sub-menu li {
+    background: rgba(0,0,0,.84);
+}
+
+.nav2 li:hover>.sub-menu li a {
+    width: 100%;
 }
 
 .header.show-fixed {
@@ -237,6 +318,7 @@ header.header {
     z-index: 1010;
     padding-bottom: 15px;
     padding-top: 20px;
+    height: 101px;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -300,6 +382,7 @@ header.header.show-fixed::before {
 .aios-split-nav {
     display: flex;
     justify-content: space-between;
+    margin-top: -93px;
 }
 
 
@@ -489,6 +572,22 @@ footer.footer {
     .hp-slideshow {
         position: relative;
     }
+
+    section.hp-slideshow::before {
+        content: '';
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        height: 100%;
+        background: rgba(0,0,0,.35);
+    }
+
+    .logo-holder {
+        margin-top: -20px;
+    }
+
     .title-slide-show {
         position: absolute;
         font-size: 135px;
@@ -500,6 +599,7 @@ footer.footer {
         max-width: 322px;
         bottom: 0;
         left: 14%;
+        z-index: 1;
         padding-left: 22px;
         line-height: 114px;
     }
@@ -752,6 +852,11 @@ footer.footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 1;
+    }
+
+    .map-agent-name a:hover {
+        color: #000000;
     }
 
     .map-det-font.active {
@@ -801,6 +906,10 @@ footer.footer {
     .map-agent-name a {
         font-size: 20px;
         padding-bottom: 16px;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
 
     .map-content {
@@ -990,6 +1099,38 @@ footer.footer {
     .site-form {
         font-size: 0;
         padding: 90px 125px 74px 92px;
+        position: relative;
+    }
+
+    .site-form div.wpcf7-response-output {
+        font-size: 13px;
+        text-align: center;
+        position: absolute;
+        bottom: -53px;
+        margin: 0;
+        width: 100%;
+        left: 0;
+    }
+    
+    .site-form span.wpcf7-not-valid-tip {
+        font-size: 15px;
+    }
+    
+    .site-form .wpcf7-form-control-wrap {
+        display: block;
+    }
+    
+    .site-form div.wpcf7 .ajax-loader {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -19px;
+    }
+    
+    .site-form .use-floating-validation-tip .wpcf7-not-valid-tip {
+        position: absolute;
+        top: 0;
+        width: 180px;
     }
 
     .form-md {
@@ -1009,8 +1150,7 @@ footer.footer {
     }
 
     .form-md input,
-    .form-lg textarea,
-    select {
+    .form-lg textarea {
         width: 100%;
         min-height: 60px;
         border: none;
@@ -1310,6 +1450,38 @@ footer.footer {
     .intro-popup-form {
         font-size: 0;
         padding: 42px 120px 0 91px;
+        position: relative;
+    }
+
+    .intro-popup-form div.wpcf7-response-output {
+        font-size: 13px;
+        text-align: center;
+        position: absolute;
+        bottom: 54px;
+        margin: 0;
+        width: 100%;
+        left: 0;
+    }
+    
+    .intro-popup-form span.wpcf7-not-valid-tip {
+        font-size: 15px;
+    }
+    
+    .intro-popup-form .wpcf7-form-control-wrap {
+        display: block;
+    }
+    
+    .intro-popup-form div.wpcf7 .ajax-loader {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -19px;
+    }
+    
+    .intro-popup-form .use-floating-validation-tip .wpcf7-not-valid-tip {
+        position: absolute;
+        top: 0;
+        width: 180px;
     }
 
     .global-btn {
