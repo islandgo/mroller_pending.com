@@ -12,8 +12,14 @@
 
 	/* Header */
 
-	.nav2 li:hover>.sub-menu li a {
+	/* .nav2 li:hover>.sub-menu li a {
 		padding: 0px 63px;
+	} */
+	.nav2 li:hover>.sub-menu li {
+		margin: 0 57px 0;
+	}
+	.nav2 li:hover>.sub-menu {
+		margin-left: 17px;
 	}
 
 	/* Header end */
@@ -101,7 +107,10 @@
 
 @media only screen and (max-width: 1366px) {
 	/* 1200px */
-
+	.nav2 li:hover>.sub-menu {
+		margin-left: 46px;
+		padding-top: 27px;
+	}
 	/* Header */
 
 	.header-info {
@@ -125,19 +134,15 @@
 		min-width: 130px;
 	}
 
-	.nav2 li:hover>.sub-menu {
-		margin-left: 50px;
-	}
-
 	/* Header end */
 
 	/* Banner */
 
 	.title-slide-show {
-		font-size: 93px;
-		min-height: 356px;
-		line-height: 77px;
-		max-width: 256px;
+	    font-size: 72px;
+		min-height: 289px;
+		line-height: 66px;
+		max-width: 180px;
 	}
 
 	/* Banner end */
@@ -246,13 +251,28 @@
         z-index: 1;
         align-self: start;
     }
+
+	.footer-info {
+        max-width: 627px;
+        margin: 0 212px 0 297px;
+	}
+	
 }
 
 @media only screen and (max-width: 1199px) {
 	/* 992 */
-
+	.nav2 li:hover>.sub-menu {
+		padding-top: 31px;
+	}
+	/* footer */
+	.footer-info {
+		max-width: 627px;
+		margin: 0 125px 0 204px;
+	}
 	/* Header */
-
+	.header.show-fixed .header-inner .logo-holder img.fixed {
+		top: 10px;
+	}
 
 	/* Header end */
 
@@ -364,12 +384,20 @@
 	/* Footer */
 	
 	/* Footer end */
+
+
 } 
 
 /* iPad(portrait) | Galaxy Tab 4(portrait)  */ 
 @media only screen and (max-width: 991px) {
 	/* 768 */
-
+	.fixed-smi {
+		display: none;
+	}
+	.footer-info {
+		max-width: 100%;
+		margin: 0;
+	}
 	/* Popup */
 
 	.intro-popup-form {
@@ -404,6 +432,12 @@
 
 	.header-inner .logo-holder img.fixed {
 		display: block;
+	}
+
+	.header-inner .logo-holder img {
+		max-width: 148px;
+		position: relative;
+		top: 8px;
 	}
 
 	.header-inner .logo-holder img {
@@ -469,6 +503,10 @@
 	.properties-content h4 {
 		padding: 0 90px 72px 44px;
 	}
+	.properties-item {
+		max-width: 600px;
+		margin: 0 auto;
+	}
 
 	.site-title-primary h4 {
 		font-size: 22px;
@@ -485,6 +523,7 @@
 
 
 	/* Area */
+	
 	.region-area-container .site-title-primary {
 		padding-left: 40px;
 	}
@@ -571,6 +610,10 @@
 		padding-bottom: 20px;
 	}
 
+	#menu-footer-menu a {
+		font-size: 15px;
+	}
+
 	#menu-footer-menu {
 		flex-direction: column;
 		font-size: 20px;
@@ -606,6 +649,15 @@
 @media only screen and (max-width: 767px) {
 	/* 481 */
 
+	.intro-popup-form div.wpcf7-response-output {
+		font-size: 10px;
+	}
+
+	.site-form div.wpcf7-response-output {
+		width: calc(100% - 96px);
+		bottom: -78px;
+		font-size: 10px;
+	}
 	/* Popup */
 	
 	.aiosp-wrap .aiosp-container .aios-popup-body {
@@ -647,8 +699,18 @@
 	.site-title-primary h2 {
 		font-size: 47px;
 		padding: 24px 0;
-		max-width: 245px;
+		max-width: 448px;
 		line-height: 60px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.title-line-secondary {
+		border-left: none;
+	}
+
+	.title-line-secondary::after {
+		display: none;
 	}
 
 	.site-title-primary h4 {
@@ -659,12 +721,6 @@
 		font-size: 20px;
 	}
 
-	.site-title-primary h2 {
-		padding: 24px 0;
-		max-width: 336px;
-		margin: 0 auto;
-		text-align: center;
-	}
 	
 	.properties-title .site-title-primary h4{
 		max-width: 262px;
@@ -718,7 +774,7 @@
 
 	.comp-area-container p {
 		font-size: 20px;
-		max-width: 356px;
+		max-width: 564px;
 	}
 
 	/* Area end*/
@@ -745,7 +801,7 @@
 
 	.commercial-primary-section p {
 		font-size: 18px;
-		max-width: 344px;
+		max-width: 564px;
 	}
 
 	/* Residential end */
@@ -799,7 +855,11 @@
 @media only screen and (max-width: 480px) {
 
 	/* 321 */
-
+	.site-form div.wpcf7-response-output {
+		width: calc(100% - 40px);
+		bottom: -63px;
+		font-size: 7px;
+	}
 	/* Popup */
 
 	.intro-popup-title h2 {
@@ -1043,5 +1103,27 @@
 	
 	/* Footer end */
 
+	.hc-radio-inner span.wpcf7-list-item input:checked ~ span.wpcf7-list-item-label::before {
+		width: 12px;
+		height: 12px;
+		top: 7px;
+		left: -3px;
+	}
+
+	.hc-radio-inner span.wpcf7-list-item-label::after {
+		top: 3px;
+		left: -6px;
+		width: 18px;
+	}
+
+	span.wpcf7-list-item-label {
+		padding: 0px 2px;
+		font-size: 12px;
+		margin-right: 9px;
+	}
+
+	.hc-radio, .hc-radio-inner {
+		padding: 0 11px 12px;
+	}
 }
  

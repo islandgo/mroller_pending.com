@@ -8,9 +8,10 @@
 	<div class="comp-footer-container container">
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer") ) : ?><?php endif ?>
 		<div class="footer-item lower-footer">
-			<p class="copyright"> ©<?php echo do_shortcode('[currentYear]') ?>&nbsp <span class="sitename"> Michael Roller. </span> All rights
-			reserved. <a class="sitemap" href="<?php echo do_shortcode('[blogurl]')?>/sitemap">Sitemap |</a>
-			<?php echo do_shortcode('[agentimage_credits credits="Real Estate Website Design by <a target="_blank" href="https://www.agentimage.com" style="text-decoration:underline;font-weight:bold">&nbsp Agent Image</a>"]'); ?>
+		<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_class' => 'footernav', 'theme_location' => 'footer-menu','depth'=>1 ) ); ?>
+			<p class="copyright"> ©<?php echo do_shortcode('[currentYear]') ?>&nbsp; <span class="sitename"> Michael Roller. </span>&nbsp; All rights
+			reserved. <a class="sitemap" href="<?php echo do_shortcode('[blogurl]')?>/sitemap">&nbsp; Sitemap | &nbsp;</a>
+			<?php echo do_shortcode('[agentimage_credits credits="Real Estate Website Design by <a target="_blank" href="https://www.agentimage.com" style="text-decoration:underline;font-weight:bold"> Agent Image</a>"]'); ?>
 			</p>					
 			<div class="mls">
 				<em class="ai-font-eho" title="MLS"></em>

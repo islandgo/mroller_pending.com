@@ -30,8 +30,10 @@
 		},
 		
 		initNavigation: function() {
-			var $nav = jQuery( '#nav' );
-			if ( $nav.length > 0 ) $nav.navTabDoubleTap();
+			setTimeout(function(){
+				var $nav = jQuery( '.nav2');
+				if ( $nav.length > 0 ) $nav.navTabDoubleTap();
+			},3000)
 		},
 		initTeams: function() {
 			/* Put featured properties code here */

@@ -3,6 +3,16 @@
  * Register sidebars
  */
 function register_ai_child_starter_theme_sidebars() {
+
+
+	register_sidebar(array( 
+		'name' => 'Slide Tagline',
+		'id'=>'slide-tagline',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
 	
 	register_sidebar(array( 
 	   'name' => 'My Custom Sidebar',
