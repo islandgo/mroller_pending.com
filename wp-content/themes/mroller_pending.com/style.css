@@ -1056,6 +1056,7 @@ footer.footer {
         position: relative;
         padding: 97px 15px 92px;
         color: #fff;
+        margin-top: -4px;
     }
     .hp-contact-us::before {
         content: "";
@@ -1373,8 +1374,17 @@ footer.footer {
         letter-spacing: 0.05em;
         line-height: 26px;
     }
+
+    #menu-footer-menu a:hover {
+        color: #fff;
+        opacity: .7;
+    }
     #menu-footer-menu a {
         margin: 0 25px;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
 
     .lower-footer .mls {
