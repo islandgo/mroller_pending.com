@@ -789,10 +789,9 @@ footer.footer {
     }
 
     .comp-area-container p {
-        padding: 132px 0 74px 0;
-        max-width: 778px;
+        padding: 132px 30px 74px 0;
+        max-width: 776px;
     }
-
     .region-area-container .site-title-primary .title-line-primary {
         border-top: none;
     }

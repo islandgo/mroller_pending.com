@@ -530,9 +530,10 @@
 
 	.comp-area-container p {
 		padding: 30px 0 40px 0;
-		max-width: 498px;
+		max-width: 618px;
 		text-align: center;
 		margin: 0 auto;
+		font-size: 15px;
 	}
 
 	.item-area-logo {
@@ -774,8 +775,9 @@
 	}
 
 	.comp-area-container p {
-		font-size: 20px;
-		max-width: 400px;
+		font-size: 16px;
+		padding-left: 20px;
+    	padding-right: 20px;
 	}
 
 	/* Area end*/
@@ -801,8 +803,9 @@
 	}
 
 	.commercial-primary-section p {
-		font-size: 18px;
-		max-width: 400px;
+		font-size: 16px;
+		padding-left: 20px;
+    	padding-right: 20px;
 	}
 
 	/* Residential end */
@@ -974,7 +977,6 @@
 
 	.comp-area-container p {
 		font-size: 14px;
-		max-width: 237px;
 		line-height: 24px;
 	}
 
@@ -1007,7 +1009,6 @@
 
 	.commercial-primary-section p {
 		font-size: 14px;
-		max-width: 237px;
 		line-height: 24px;
 	}
 
