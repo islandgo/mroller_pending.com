@@ -134,6 +134,10 @@
 		min-width: 130px;
 	}
 
+	.nav2 li:hover>.sub-menu li {
+		margin: 0;
+	}
+
 	/* Header end */
 
 	/* Banner */
@@ -803,9 +807,8 @@
 	}
 
 	.commercial-primary-section p {
-		font-size: 16px;
-		padding-left: 20px;
-    	padding-right: 20px;
+		font-size: 18px;
+		max-width: 344px;
 	}
 
 	/* Residential end */
@@ -993,6 +996,11 @@
 		border-bottom: solid 6px #a11e21;
 	}
 
+	.hp-commercial::after {
+		height: 6px;
+		bottom: -4px;
+	}
+
 	.hp-commercial .site-title-primary h4 {
 		font-size: 18px;
 	}
@@ -1083,6 +1091,11 @@
 	.btn-holder {
 		font-size: 10px;
 		max-width: 256px;
+	}
+
+	.site-form div.wpcf7-response-output {
+		font-size: 7px;
+		bottom: -68px;
 	}
 
 	/* Contact Us end */
